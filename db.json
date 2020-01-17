@@ -10,7 +10,7 @@
   },
   "trainingPlans": [
     {
-    "id": 3
+    "id": 3,
     "categories": [
       {
     "running": [{"exercise1": "running"}]
