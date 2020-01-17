@@ -1,21 +1,3 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "hello"
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
-  "trainingPlans": [
-    {
-    "id": 3,
-    "categories": [
-      {
-    "running": [{"exercise1": "running"}]
-    }
-      ]
-    }
-  ]
+  "categories": [{"idCategory":"1", "strCategory": "running"}]
 }
