@@ -7,6 +7,18 @@
     {
     "idCategory": 2,
     "strCategory": "football"
+    },
+    {
+    "idCategory": 3,
+    "strCategory": "basketball"
+    },
+    {
+    "idCategory": 4,
+    "strCategory": "volleyball"
+    },
+    {
+    "idCategory": 5,
+    "strCategory": "handball"
     }
   ]
 }
