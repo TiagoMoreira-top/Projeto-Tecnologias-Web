@@ -19,6 +19,18 @@
     {
     "idCategory": 5,
     "strCategory": "handball"
+    },
+    {
+    "idCategory": 6,
+    "strCategory": "swimming"
+    },
+    {
+    "idCategory": 7,
+    "strCategory": "marcialarts"
+    },
+    {
+    "idCategory": 8,
+    "strCategory": "boxing"
     }
   ]
 }
