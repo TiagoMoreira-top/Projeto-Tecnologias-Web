@@ -1,8 +1,9 @@
 {
-  "posts": [
+  "trainingPlans": [
     {
       "id": 1,
-      "title": "hello"
+      "title": "hello",
+      "running": [{"day1": [{"exercise1":"running", "exercise2": "running", "exercise3":"running"}]}],
     }
   ],
   "profile": {
