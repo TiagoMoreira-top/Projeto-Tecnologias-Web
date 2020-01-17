@@ -3,11 +3,10 @@
     {
       "id": 1,
       "title": "hello",
-      "running": [{"day1": [{"exercise1":"running", "exercise2": "running", "exercise3":"running"}]}],
     }
   ],
   "profile": {
-    "id": "2",
+    "id": 2,
     "name": "typicode"
   }
 }
