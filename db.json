@@ -7,5 +7,15 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "trainingPlans": [
+    {
+    "id": 3
+    "categories": [
+      {
+    "running": [{"exercise1": "running"}]
+    }
+      ]
+    }
+  ]
 }
