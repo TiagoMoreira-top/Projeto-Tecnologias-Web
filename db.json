@@ -42,7 +42,49 @@
       "strExercise5": "Kick out",
       "strGoal1": "Correção e aumento do tamanho da passada",
       "strGoal2": "Correção da parte anterior da corrida (perna para trás)",
-      "strExcecution1": " Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º"
+      "strGoal3": "Fortalecer e aumentar a mobilidade do tornozelo",
+      "strGoal4": "Melhorar a postura do quadril",
+      "strGoal5": "Aumentar a amplitude da passada",
+      "strExcecution1": "Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º",
+      "strExecution2": "Corrida parada ou em deslocamento elevando o calcanhar até os glúteos (não precisa encostar) coordenado com o movimento de braço",
+      "strExecution3": "Elevar o calcanhar alternadamente sem tirar os pés do chão em movimento lateral em harmonia com os braços. O movimento é no sentido lateral a alternar alguns metros para o lado direito e a seguir para o lado esquerdo",
+      "strExcecution4": "Elevar pernas e braços alternadamente dando um pequeno salto a cada elevação. Pode ser feito parado ou em deslocamento",
+      "strExecutiion5": "Correr jogando os pés alternadamente para frente, como se estivesse chutando. Coordenar o movimento lateral dos braços"
+    }
+  ],
+  "football": [
+    {
+      "strExercise1": "skiping"
+    }
+  ],
+  "basketball": [
+    {
+
+    }
+  ],
+  "volleyball": [
+    {
+
+    }
+  ],
+  "handball": [
+    {
+      
+    }
+  ],
+  "swimming": [
+    {
+      
+    }
+  ],
+  "marcialarts": [
+    {
+      
+    }
+  ],
+  "boxing": [
+    {
+      
     }
   ]
 }
