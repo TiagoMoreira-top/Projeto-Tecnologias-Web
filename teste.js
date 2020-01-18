@@ -5,14 +5,20 @@ const getExerciseByCategory = async (category) => {
     const exercises = json[0].exercises
     console.log(exercises);
     document.getElementById("exercises").innerHTML = ""
+    let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
         const id = exercises[i][`idExercise`]
         const execution = exercises[i][`strExecution`]
         const youtube = exercises[i][`strYoutube`]
-        if (exercise) {
-            document.getElementById("exercises").innerHTML += `<div class="border border-secondary text-light"> <div id="${id}"> <p> <span class="${id}"> Exercício </span>: ${exercise} </div> <p> Descrição: ${execution} </p> </p> <a href="${youtube}"> Ver como fazer </a> </div>`
+        if (exercise && color == "grey") {
+            document.getElementById("exercises").innerHTML += `<div class="border border-secondary text-light bg-secondary"> <div id="${id}"> <p> <span class="${id}"> Exercício </span>: ${exercise} </div> <p> Descrição: ${execution} </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> Ver como fazer </a> </div>`
         document.getElementById(`${id}`).classList.add("text-uppercase")
+        color = "dark"
+        } else if (exercise && color == "dark") {
+            document.getElementById("exercises").innerHTML += `<div class="border border-secondary text-light bg-dark"> <div id="${id}"> <p> <span class="${id}"> Exercício </span>: ${exercise} </div> <p> Descrição: ${execution} </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> Ver como fazer </a> </div>`
+        document.getElementById(`${id}`).classList.add("text-uppercase")
+        color = "grey"
         } 
     }
     document.getElementById("exercises").innerHTML += ` <br> <br> <button class="btn btn-secondary">Plano Alimentar</button>`
