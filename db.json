@@ -2,7 +2,11 @@
   "categories": [
     {
       "idCategory": 1, 
-      "strCategory": "running"
+      "strCategory": "running",
+      "strExercise1": "skiping",
+      "strExercise2": "Anfersen",
+      "strExercise3": "dribling",
+      "strExercise4": "Hopserlauf"
     },
     {
     "idCategory": 2,
