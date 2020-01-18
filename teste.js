@@ -7,12 +7,16 @@ const getExerciseByCategory = async (category) => {
     for (let i = 0; i < 5; i++) {
         const exercise = exercises[i][`strExercise`]
         const id = exercises[i][`idExercise`]
+        const execution = exercises[i][`strExcecution`]
         const youtube = exercises[i][`strYoutube`]
+        console.log(exercises[i]);
+        console.log(execution);
         if (exercise) {
-            document.getElementById("exercises").innerHTML += `<p id="${id}"> Exercício:${exercise} </p> <p> Ver como fazer:${youtube} </p>`
-        }
+            document.getElementById("exercises").innerHTML += `<div class="border border-secondary text-light"> <div id="${id}"> <p> <span class="${id}"> Exercício </span>: ${exercise} </div> <p> Descrição: ${execution} </p> </p> <a href="${youtube}"> Ver como fazer </a> </div>`
+        document.getElementById(`${id}`).classList.add("text-uppercase")
+        } 
     }
-    document.getElementById("exercises").innerHTML += `<button class="btn btn-secondary">Plano Alimentar</button>`
+    document.getElementById("exercises").innerHTML += ` <br> <br> <button class="btn btn-secondary">Plano Alimentar</button>`
     document.getElementById("exercises").addEventListener("click", function() {
 
     })
