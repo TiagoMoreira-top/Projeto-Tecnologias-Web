@@ -6,10 +6,16 @@ const getExerciseByCategory = async (category) => {
     console.log(exercises);
     for (let i = 0; i < 5; i++) {
         const exercise = exercises[i][`strExercise`]
-        const goal = exercises[i][`strGoal`]
         const id = exercises[i][`idExercise`]
-        document.getElementById("exercises").innerHTML += `<p id="${id}"> ${exercise} </p> <p> ${goal} </p>`
+        const youtube = exercises[i][`strYoutube`]
+        if (exercise) {
+            document.getElementById("exercises").innerHTML += `<p id="${id}"> Exercício:${exercise} </p> <p> Ver como fazer:${youtube} </p>`
+        }
     }
+    document.getElementById("exercises").innerHTML += `<button class="btn btn-secondary">Plano Alimentar</button>`
+    document.getElementById("exercises").addEventListener("click", function() {
+
+    })
 }
 
 async function getCategories() {
@@ -28,3 +34,8 @@ document.getElementById("btnExercises").addEventListener("click", function() {
     getExerciseByCategory(categoryValue)
 })
 
+async function getEatingPlan(category) {
+    const data = await fecth(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/${category}`)
+    const json = data.json()
+    console.log(json);
+}

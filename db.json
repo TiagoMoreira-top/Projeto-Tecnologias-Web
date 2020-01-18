@@ -19,12 +19,12 @@
   ],
   "running": [
     {
-      "exercises": [{"idExercise": 1, "strExercise": "skiping", "strGoal": "Correção e aumento do tamanho da passada", "strExcecution": "Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º"}, {"strExercise": "Anfersen", "strGoal": "Correção da parte anterior da corrida (perna para trás)", "strExecution": "Corrida parada ou em deslocamento elevando o calcanhar até os glúteos (não precisa encostar) coordenado com o movimento de braço"}, {"strExercise": "dribling", "strGoal": "Fortalecer e aumentar a mobilidade do tornozelo", "strExecution": "Elevar o calcanhar alternadamente sem tirar os pés do chão em movimento lateral em harmonia com os braços. O movimento é no sentido lateral a alternar alguns metros para o lado direito e a seguir para o lado esquerdo"}, {"strExercise": "Hopserlauf", "strGoal": "Melhorar a postura do quadril", "strExcecution": "Elevar pernas e braços alternadamente dando um pequeno salto a cada elevação. Pode ser feito parado ou em deslocamento"}, {"strExercise": "Kick out", "strGoal": "Aumentar a amplitude da passada",  "strExecutiion": "Correr jogando os pés alternadamente para frente, como se estivesse chutando. Coordenar o movimento lateral dos braços"}]
+      "exercises": [{"idExercise": 1, "strExercise": "skiping", "strYoutube": "https://www.youtube.com/watch?v=Rb-DIMPjJuo", "strExcecution": "Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º"}, {"idExercise": 2, "strExercise": "Anfersen", "strYoutube": "", "strExecution": "Corrida parada ou em deslocamento elevando o calcanhar até os glúteos (não precisa encostar) coordenado com o movimento de braço"}, {"idExercise": 3, "strExercise": "dribling", "strYoutube": "", "strExecution": "Elevar o calcanhar alternadamente sem tirar os pés do chão em movimento lateral em harmonia com os braços. O movimento é no sentido lateral a alternar alguns metros para o lado direito e a seguir para o lado esquerdo"}, {"idExercise": 4, "strExercise": "Hopserlauf", "strYoutube": "", "strExcecution": "Elevar pernas e braços alternadamente dando um pequeno salto a cada elevação. Pode ser feito parado ou em deslocamento"}, {"idExercise": 5, "strExercise": "Kick out", "strYoutube": "",  "strExecutiion": "Correr jogando os pés alternadamente para frente, como se estivesse chutando. Coordenar o movimento lateral dos braços"}]
     }
   ],
   "football": [
     {
-      "exercises": [{"strExercise": "skiping", "strGoal": "Correção e aumento do tamanho da passada"}]
+      "exercises": [{"idExercise": 1, "strExercise": "Elevações", "strYoutube": ""}]
     }
   ],
   "basketball": [
