@@ -2,6 +2,11 @@ const getExerciseByCategory = async (category) => {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/${category}`)
     const json = await data.json()
     console.log(json);
+    const exercises = json.exercises
+    for (let i = 1; i < 6; i++) {
+        const exercise = exercises[`strExercise${i}`]
+        document.getElementById("exercises").innerHTML += `<p> ${exercise} </p>`
+    }
 }
 
 async function getCategories() {
