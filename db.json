@@ -19,8 +19,7 @@
   ],
   "running": [
     {
-      "exercises": [{"strExercise1": "skiping", "strExercise2": "Anfersen", "strExercise3": "dribling", "strExercise4": "Hopserlauf", "strExercise5": "Kick out"}],
-      "exercisesGoals": [{"strGoal1": "Correção e aumento do tamanho da passada", "strGoal2": "Correção da parte anterior da corrida (perna para trás)", "strGoal3": "Fortalecer e aumentar a mobilidade do tornozelo", "strGoal4": "Melhorar a postura do quadril", "strGoal5": "Aumentar a amplitude da passada"}],
+      "exercises": [{"strExercise1": "skiping", "strGoal1": "Correção e aumento do tamanho da passada"}, {"strExercise2": "Anfersen", "strGoal2": "Correção da parte anterior da corrida (perna para trás)"}, {"strExercise3": "dribling", "strGoal3": "Fortalecer e aumentar a mobilidade do tornozelo"}, {"strExercise4": "Hopserlauf", "strGoal4": "Melhorar a postura do quadril"}, {"strExercise5": "Kick out", "strGoal5": "Aumentar a amplitude da passada"}],
       "strExcecution1": "Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º",
       "strExecution2": "Corrida parada ou em deslocamento elevando o calcanhar até os glúteos (não precisa encostar) coordenado com o movimento de braço",
       "strExecution3": "Elevar o calcanhar alternadamente sem tirar os pés do chão em movimento lateral em harmonia com os braços. O movimento é no sentido lateral a alternar alguns metros para o lado direito e a seguir para o lado esquerdo",
