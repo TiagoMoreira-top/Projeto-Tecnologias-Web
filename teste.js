@@ -4,13 +4,12 @@ const getExerciseByCategory = async (category) => {
     console.log(json);
     const exercises = json[0].exercises
     console.log(exercises);
-    for (let i = 0; i < 5; i++) {
+    document.getElementById("exercises").innerHTML = ""
+    for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
         const id = exercises[i][`idExercise`]
-        const execution = exercises[i][`strExcecution`]
+        const execution = exercises[i][`strExecution`]
         const youtube = exercises[i][`strYoutube`]
-        console.log(exercises[i]);
-        console.log(execution);
         if (exercise) {
             document.getElementById("exercises").innerHTML += `<div class="border border-secondary text-light"> <div id="${id}"> <p> <span class="${id}"> Exercício </span>: ${exercise} </div> <p> Descrição: ${execution} </p> </p> <a href="${youtube}"> Ver como fazer </a> </div>`
         document.getElementById(`${id}`).classList.add("text-uppercase")
