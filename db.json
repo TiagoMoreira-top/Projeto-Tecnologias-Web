@@ -36,10 +36,5 @@
     {
       "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
     }
-  ],
-  "marcialarts": [
-    {
-      "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
-    }
   ]
 }
