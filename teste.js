@@ -4,16 +4,17 @@ const getExerciseByCategory = async (category) => {
     console.log(json);
     const exercises = json[0].exercises
     console.log(exercises);
-    for (let i = 1; i < 6; i++) {
-        const exercise = exercises[`strExercise${i}`]
-        document.getElementById("exercises").innerHTML += `<p> ${exercise} </p>`
+    for (let i = 0; i < 5; i++) {
+        const exercise = exercises[i][`strExercise`]
+        const goal = exercises[i][`strGoal`]
+        const id = exercises[i][`idExercise`]
+        document.getElementById("exercises").innerHTML += `<p id="${id}"> ${exercise} </p> <p> ${goal} </p>`
     }
 }
 
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
-    console.log(json);
     for (let i = 0; i < json.length; i++) {
         document.getElementById("sltCategory").innerHTML += `<option> ${json[i].strCategory} </option>`
 
