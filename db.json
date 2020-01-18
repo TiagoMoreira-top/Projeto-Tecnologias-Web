@@ -2,11 +2,7 @@
   "categories": [
     {
       "idCategory": 1, 
-      "strCategory": "running",
-      "strExercise1": "skiping",
-      "strExercise2": "Anfersen",
-      "strExercise3": "dribling",
-      "strExercise4": "Hopserlauf"
+      "strCategory": "running"
     },
     {
     "idCategory": 2,
@@ -35,6 +31,18 @@
     {
     "idCategory": 8,
     "strCategory": "boxing"
+    }
+  ],
+  "running": [
+    {
+      "strExercise1": "skiping",
+      "strExercise2": "Anfersen",
+      "strExercise3": "dribling",
+      "strExercise4": "Hopserlauf",
+      "strExercise5": "Kick out",
+      "strGoal1": "Correção e aumento do tamanho da passada",
+      "strGoal2": "Correção da parte anterior da corrida (perna para trás)",
+      "strExcecution1": " Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º"
     }
   ]
 }
