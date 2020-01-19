@@ -1,6 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: #A0A0A0;
+    background: #707070;
 }
 
 #alter {
@@ -17,5 +17,19 @@ body {
 }
 
 #sltCategory {
-    width: 30%;
+    width: 10%;
+}
+
+#inputWeight {
+    width: 22%;
+}
+
+#img1, #img2, #img3 {
+    width: 400px;
+    height: 350px;
+    margin-right: 25px;
+}
+
+#images {
+    display: flex;
 }

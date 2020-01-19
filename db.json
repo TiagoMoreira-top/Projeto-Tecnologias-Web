@@ -22,16 +22,12 @@
       "exercises": [{"idExercise": 1, "strExercise": "Skiping", "strYoutube": "https://www.youtube.com/watch?v=Rb-DIMPjJuo", "strExecution": "Corrida parada elevando o joelho até a altura do quadril(alto) e elevação de 45º no baixo. Manter os braços em um angulo de 90º", "repetitions": "45 segundos", "series": "3"}, {"idExercise": 2, "strExercise": "Anfersen", "strYoutube": "https://www.youtube.com/watch?v=TKuaND_u0j0", "strExecution": "Corrida parada ou em deslocamento elevando o calcanhar até os glúteos (não precisa encostar) coordenado com o movimento de braço", "repetitions": "45 segundos", "series": "3"}, {"idExercise": 3, "strExercise": "dribbling", "strYoutube": "", "strExecution": "Elevar o calcanhar alternadamente sem tirar os pés do chão em movimento lateral em harmonia com os braços. O movimento é no sentido lateral a alternar alguns metros para o lado direito e a seguir para o lado esquerdo"}, {"idExercise": 4, "strExercise": "Hopserlauf", "strYoutube": "", "strExecution": "Elevar pernas e braços alternadamente dando um pequeno salto a cada elevação. Pode ser feito parado ou em deslocamento"}, {"idExercise": 5, "strExercise": "Kick out", "strYoutube": "", "strExecution": "Correr jogando os pés alternadamente para frente, como se estivesse chutando. Coordenar o movimento lateral dos braços"}]
     },
     {
-      "eatingplan": [
-        {
-          
-        }
-      ]
+      "eatingplan": [{  }]
     }
   ],
   "football": [
     {
-      "exercises": [{"idExercise": 1, "strExercise": "Push-Ups", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Shoulder Press", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
+      "exercises": [{"idExercise": 1, "strExercise": "Push-Ups", "strYoutube": "https://www.youtube.com/watch?v=IODxDxX7oi4", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Shoulder Press", "strYoutube": "https://www.youtube.com/watch?v=5yWaNOvgFCM", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
     }
   ],
   "basketball": [
