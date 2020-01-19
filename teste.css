@@ -1,6 +1,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+.themeLightGrey {
     background: #707070;
+}
+
+.themeDark {
+    background: #101010;
 }
 
 #alter {
@@ -17,11 +24,11 @@ body {
 }
 
 #sltCategory {
-    width: 10%;
+    width: 130px;
 }
 
 #inputWeight {
-    width: 22%;
+    width: 300px;
 }
 
 #img0, #img1, #img2 {
