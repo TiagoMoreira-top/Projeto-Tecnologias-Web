@@ -10,21 +10,25 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="teste.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <nav class="nav">
+    <nav class="nav navbar-dark bg-dark justify-content-end">
         <a class="nav-link active" href="#">Sobre Nós</a>
         <a class="nav-link" href="#">Registar-se</a>
         <a class="nav-link" href="#">Entrar</a>
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Alterar Tema</a>
+            <div class="dropdown-menu">
+              <a id="themeDark" class="dropdown-item" href="#">Dark</a>
+              <a id="themeLightGrey" class="dropdown-item" href="#">LightGrey</a>
+          </li>
+    </nav> <br>
 </head>
 
-<body>
+<body id="body" class="themeLightGrey">
     <div id="container">
         <div id="box">
             <h1 for="sltCategory" class="font-weight-bold text-light">Tipos de treino <img id="alter"
                     src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/depositphotos_5927512-stock-photo-dumbbells.jpg"
                     alt=""></h1>
-
             <select id="sltCategory" class="form-control">
             </select> <br>
             <div id="inputWeight" class="input-group">
@@ -42,6 +46,7 @@
             <br>
             <button id="btnTrainningPlan" class="btn btn-secondary">Plano de Treino</button> <br> <br>
         </div>
+        <div id="categoryTitle" class="text-light text-uppercase"></div>
         <div id="exercises"></div>
         <div id="images">
             <img id="img0"
