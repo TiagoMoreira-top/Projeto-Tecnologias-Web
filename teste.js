@@ -1,4 +1,4 @@
-
+localStorage.setItem("theme", "lightGrey")
 
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
@@ -81,12 +81,16 @@ async function getExercicesByCategory(value) {
     }
 }
 
+let theme = localStorage.getItem("theme")
+
 document.getElementById("themeDark").addEventListener("click", function() {
     document.getElementById("body").classList.remove("themeLightGrey")
     document.getElementById("body").classList.add("themeDark")
+    console.log(localStorage.getItem("theme"));
 })
 
 document.getElementById("themeLightGrey").addEventListener("click", function() {
     document.getElementById("body").classList.remove("themeDark")
     document.getElementById("body").classList.add("themeLightGrey")
+    localStorage.getItem("theme") 
 })
