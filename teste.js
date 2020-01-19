@@ -1,9 +1,4 @@
-const getExerciseByCategory = async (category) => {
-    const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/${category}`)
-    const json = await data.json()
-    document.getElementById("exercises").addEventListener("click", function () {
-    })
-}
+
 
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
@@ -18,8 +13,7 @@ getCategories()
 document.getElementById("btnTrainningPlan").addEventListener("click", function () {
     const categoryElement = document.querySelector("#sltCategory")
     const categoryValue = categoryElement.options[categoryElement.selectedIndex].value
-  //  getExerciseByCategory(categoryValue)
-  getExercicesCategories(categoryValue)
+  getExercicesByCategory(categoryValue)
 })
 
 async function getEatingPlan(category) {
@@ -40,7 +34,7 @@ document.getElementById("btnUndoUserWeight").addEventListener("click", function 
     document.getElementById("btnUndoUserWeight").classList.add("d-none")
 })
 
-async function getExercicesCategories(value) {
+async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
     console.log(json[value].exercises);
@@ -65,4 +59,9 @@ async function getExercicesCategories(value) {
         }
     }
     document.getElementById("exercises").innerHTML += ` <br> <button class="btn btn-secondary">Plano Alimentar</button> <br> <br>`
+    const images = json[value].images
+    for (let i = 0; i < images.length; i++) {
+        image = images[i][`strImg`]
+        document.getElementById(`img${i}`).src = `C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/${image}`
+    }
 }
