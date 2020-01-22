@@ -1,11 +1,13 @@
-
+if (localStorage.getItem("theme") == "dark") {
+    document.getElementById("body").classList.remove("themeLightGrey")
+    document.getElementById("body").classList.add("themeDark")
+}
 
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
     for (let i = 0; i < json.length; i++) {
         document.getElementById("sltCategory").innerHTML += `<option value="${i}"> ${json[i].strCategory} </option>`
-
     }
 }
 getCategories()
@@ -40,6 +42,8 @@ async function getExercicesByCategory(value) {
     console.log(json[value].exercises);
     const exercises = json[value].exercises
     document.getElementById("exercises").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = `<h1 class="font-weight-bold"> ${json[value].strCategory} </h1> <br>`
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
@@ -60,8 +64,35 @@ async function getExercicesByCategory(value) {
     }
     document.getElementById("exercises").innerHTML += ` <br> <button class="btn btn-secondary">Plano Alimentar</button> <br> <br>`
     const images = json[value].images
-    for (let i = 0; i < images.length; i++) {
-        image = images[i][`strImg`]
-        document.getElementById(`img${i}`).src = `C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/${image}`
+    console.log(images);
+    document.getElementById("images").innerHTML = `<img id="img0"
+    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_214657508_Preview.jpeg"
+    alt="">
+<img id="img1"
+    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_164712654_Preview.jpeg"
+    alt="">
+<img id="img2"
+    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_195637927_Preview.jpeg"
+    alt="">`
+    if (images) {
+        for (let i = 0; i < images.length; i++) {
+            image = images[i][`strImg`]
+            document.getElementById(`img${i}`).src = `C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/${image}`
+        }
     }
 }
+
+let theme = localStorage.getItem("theme")
+
+document.getElementById("themeDark").addEventListener("click", function() {
+    document.getElementById("body").classList.remove("themeLightGrey")
+    document.getElementById("body").classList.add("themeDark")
+    localStorage.setItem("theme", "dark")
+    console.log(localStorage.getItem("theme"));
+})
+
+document.getElementById("themeLightGrey").addEventListener("click", function() {
+    document.getElementById("body").classList.remove("themeDark")
+    document.getElementById("body").classList.add("themeLightGrey")
+    localStorage.setItem("theme", "lightGrey")
+})
