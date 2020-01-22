@@ -1,6 +1,7 @@
+
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #707070;
+    background: #f1f1f1;
 }
 
 #alter {
@@ -8,21 +9,38 @@ body {
     height: 90px;
 }
 
-#container {
-    margin-left: 10px;
-}
+#box {
+text-align: center;
+background-color: white ;
+width: 600px;
+height: 300px;
+margin: auto;  
+border-radius: 10px; 
+} 
 
 .lightGrey {
-    background-color: #909090;
+    background-color: #57bff2;
+    color: #f1f1f1;
+    width: 400px;
+    height: 320px;
+    text-align: center;
+
 }
 
 #sltCategory {
-    width: 10%;
+    display: flex; 
+    justify-content: center;
+    width: 200px;
+    height: 40px;
 }
 
 #inputWeight {
-    width: 22%;
+    display: flex; 
+    justify-content: center;
+    width: 300px;
+    height: 40px;
 }
+
 
 #img0, #img1, #img2 {
     width: 400px;
@@ -33,3 +51,39 @@ body {
 #images {
     display: flex;
 }
+
+/*Top Bar*/ 
+ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    margin: 10px;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #73cbd9;
+
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #256b76;
+    text-decoration: none;
+    color: #f1f1f1;
+  }
+
+/*Title*/
+  .tipos{
+      color: black ;
+      font-family: 'Cabin Condensed', sans-serif;
+      padding: 20px;
+  }

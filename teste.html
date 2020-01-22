@@ -10,18 +10,25 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="teste.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <nav class="nav">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
+   <!-- <nav class="nav">
         <a class="nav-link active" href="#">Sobre Nós</a>
         <a class="nav-link" href="#">Registar-se</a>
         <a class="nav-link" href="#">Entrar</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </nav>
+    </nav>-->
+    <ul>
+        <li><a href="#home">Sobre Nós</a></li>
+        <li><a href="#news">Registar-se</a></li>
+        <li><a href="#contact">Entrar</a></li>
+        <li><a href="#about">Disabled</a></li>
+      </ul>
 </head>
 
 <body>
     <div id="container">
         <div id="box">
-            <h1 for="sltCategory" class="font-weight-bold text-light">Tipos de treino <img id="alter"
+            <h1 for="sltCategory" class="tipos">Tipos de treino <img id="alter"
                     src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/depositphotos_5927512-stock-photo-dumbbells.jpg"
                     alt=""></h1>
 
@@ -35,12 +42,12 @@
                     <option value="3">More</option>
                 </select>
                 <div class="input-group-append">
-                    <button id="btnUserWeight" class="btn btn-outline-light" type="button">Confirmar</button>
-                    <button id="btnUndoUserWeight" class="btn btn-outline-light d-none" type="button">Alterar</button>
+                    <button id="btnUserWeight" class="btn btn-info " type="button">Confirmar</button>
+                    <button id="btnUndoUserWeight" class="btn btn-info d-none" type="button">Alterar</button>
                 </div>
             </div>
             <br>
-            <button id="btnTrainningPlan" class="btn btn-secondary">Plano de Treino</button> <br> <br>
+            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning">Plano de Treino</button> <br> <br>
         </div>
         <div id="exercises"></div>
         <div id="images">
