@@ -26,26 +26,30 @@ margin: auto;
 border-radius: 10px; 
 } 
 
+.blue {
+    background-color: #57bff2;
+    color: #f1f1f1;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
 .lightGrey {
     background-color: #57bff2;
     color: #f1f1f1;
     width: 400px;
-    height: 320px;
+    height: 300px;
     text-align: center;
-
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #sltCategory {
     display: flex; 
     justify-content: center;
     width: 200px;
-    height: 40px;
-}
-
-#inputWeight {
-    display: flex; 
-    justify-content: center;
-    width: 300px;
     height: 40px;
 }
 

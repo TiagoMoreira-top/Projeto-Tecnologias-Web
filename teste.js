@@ -24,18 +24,6 @@ async function getEatingPlan(category) {
     console.log(json);
 }
 
-document.getElementById("btnUserWeight").addEventListener("click", function () {
-    const categoryElement = document.querySelector("#sltWeight")
-    const categoryValue = categoryElement.options[categoryElement.selectedIndex].text
-    document.getElementById("btnUserWeight").classList.add("d-none")
-    document.getElementById("btnUndoUserWeight").classList.remove("d-none")
-})
-
-document.getElementById("btnUndoUserWeight").addEventListener("click", function () {
-    document.getElementById("btnUserWeight").classList.remove("d-none")
-    document.getElementById("btnUndoUserWeight").classList.add("d-none")
-})
-
 async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -43,7 +31,8 @@ async function getExercicesByCategory(value) {
     const exercises = json[value].exercises
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<h1 class="font-weight-bold"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById("btnEatingPlan").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = `<br> <h1 class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
@@ -53,7 +42,7 @@ async function getExercicesByCategory(value) {
         const repetitions = exercises[i][`repetitions`]
         const series = exercises[i][`series`]
         if (exercise && color == "grey") {
-            document.getElementById("exercises").innerHTML += `<div class="text-light bg-secondary rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
+            document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
             document.getElementById(`${id}`).classList.add("text-uppercase")
             color = "dark"
         } else if (exercise && color == "dark") {
@@ -62,7 +51,7 @@ async function getExercicesByCategory(value) {
             color = "grey"
         }
     }
-    document.getElementById("exercises").innerHTML += ` <br> <button class="btn btn-secondary">Plano Alimentar</button> <br> <br>`
+    document.getElementById("btnEatingPlan").innerHTML += ` <br> <button class="btn btn-warning">Plano Alimentar</button> <br> <br>`
     const images = json[value].images
     console.log(images);
     document.getElementById("images").innerHTML = `<img id="img0"
@@ -81,18 +70,3 @@ async function getExercicesByCategory(value) {
         }
     }
 }
-
-let theme = localStorage.getItem("theme")
-
-document.getElementById("themeDark").addEventListener("click", function() {
-    document.getElementById("body").classList.remove("themeLightGrey")
-    document.getElementById("body").classList.add("themeDark")
-    localStorage.setItem("theme", "dark")
-    console.log(localStorage.getItem("theme"));
-})
-
-document.getElementById("themeLightGrey").addEventListener("click", function() {
-    document.getElementById("body").classList.remove("themeDark")
-    document.getElementById("body").classList.add("themeLightGrey")
-    localStorage.setItem("theme", "lightGrey")
-})

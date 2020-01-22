@@ -17,12 +17,12 @@
         <a class="nav-link" href="#">Entrar</a>
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </nav>-->
-    <ul>
+    <ul class="nav justify-content-end">
         <li><a href="#home">Sobre Nós</a></li>
         <li><a href="#news">Registar-se</a></li>
         <li><a href="#contact">Entrar</a></li>
         <li><a href="#about">Disabled</a></li>
-      </ul>
+      </ul> <br>
 </head>
 
 <body id="body" class="themeLightGrey">
@@ -31,25 +31,23 @@
             <h1 for="sltCategory" class="tipos">Tipos de treino <img id="alter"
                     src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/depositphotos_5927512-stock-photo-dumbbells.jpg"
                     alt=""></h1>
-            <select id="sltCategory" class="form-control">
-            </select> <br>
-            <div id="inputWeight" class="input-group">
-                <select class="custom-select" id="sltWeight">
+                    <div class="row justify-content-center">
+            <select id="sltCategory" class="form-control col-4">
+            </select> </div> <br>
+            <div id="inputWeight" class="row justify-content-center">
+                <select class="form-control col-4" id="sltWeight">
                     <option disabled selected>Current Weight</option>
                     <option value="1">Between 50-75 Kg</option>
                     <option value="2">Between 75-90 Kg</option>
                     <option value="3">More</option>
                 </select>
-                <div class="input-group-append">
-                    <button id="btnUserWeight" class="btn btn-info " type="button">Confirmar</button>
-                    <button id="btnUndoUserWeight" class="btn btn-info d-none" type="button">Alterar</button>
-                </div>
             </div>
             <br>
             <button id="btnTrainningPlan" class="btn btn-secondary btn-warning">Plano de Treino</button> <br> <br>
         </div>
         <div id="categoryTitle" class="text-light text-uppercase"></div>
-        <div id="exercises"></div>
+        <div id="exercises" class="d-flex justify-content-center flex-wrap"></div>
+        <div id="btnEatingPlan" class="row justify-content-center"></div>
         <div id="images">
             <img id="img0"
                 src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/AdobeStock_214657508_Preview.jpeg"
