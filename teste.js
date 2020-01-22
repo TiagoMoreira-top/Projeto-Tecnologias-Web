@@ -1,11 +1,13 @@
-localStorage.setItem("theme", "lightGrey")
+if (localStorage.getItem("theme") == "dark") {
+    document.getElementById("body").classList.remove("themeLightGrey")
+    document.getElementById("body").classList.add("themeDark")
+}
 
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
     for (let i = 0; i < json.length; i++) {
         document.getElementById("sltCategory").innerHTML += `<option value="${i}"> ${json[i].strCategory} </option>`
-
     }
 }
 getCategories()
@@ -37,12 +39,11 @@ document.getElementById("btnUndoUserWeight").addEventListener("click", function 
 async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
-    document.getElementById("categoryTitle").innerHTML = json[value].strCategory
     console.log(json[value].exercises);
     const exercises = json[value].exercises
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<h1  class="font-weight-bold"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById("categoryTitle").innerHTML = `<h1 class="font-weight-bold"> ${json[value].strCategory} </h1> <br>`
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
@@ -86,11 +87,12 @@ let theme = localStorage.getItem("theme")
 document.getElementById("themeDark").addEventListener("click", function() {
     document.getElementById("body").classList.remove("themeLightGrey")
     document.getElementById("body").classList.add("themeDark")
+    localStorage.setItem("theme", "dark")
     console.log(localStorage.getItem("theme"));
 })
 
 document.getElementById("themeLightGrey").addEventListener("click", function() {
     document.getElementById("body").classList.remove("themeDark")
     document.getElementById("body").classList.add("themeLightGrey")
-    localStorage.getItem("theme") 
+    localStorage.setItem("theme", "lightGrey")
 })
