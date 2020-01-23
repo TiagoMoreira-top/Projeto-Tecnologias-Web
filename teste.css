@@ -9,7 +9,7 @@ body {
 }
 
 .themeDark {
-    background: #303030;
+    background: #6495ED;
 }
 
 #alter {
@@ -73,10 +73,6 @@ ul {
     overflow: hidden;
     background-color: #73cbd9;
 
-  }
-  
-  li {
-    float: left;
   }
   
   li a {

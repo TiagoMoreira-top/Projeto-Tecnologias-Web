@@ -8,13 +8,46 @@
     <link rel="stylesheet" href="RegisterPage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
     <ul class="nav justify-content-end">
         <li><a href="#home">Sobre Nós</a></li>
-        <li><a href="#news">Entrar</a></li>
-      </ul> <br> <br> <br> <br>
+        <li><a href="LoginPage.html">Entrar</a></li>
+      </ul> <br> <br>
 </head>
 <body class="bg-secondary">
-    
+    <div id="alertBox" class="d-none justify-content-center">
+    <div class="alert alert-danger row col-4" role="alert">
+        <h4 class="alert-heading">Esse utilizador já existe!</h4>
+        <p>Por favor insira outro email</p>
+        <hr>
+      </div>
+    </div>
+    <div id="appTitle" class="text-center"><h1 class="font-weight-bold">MY FITNESS</h1></div> <br> 
+    <h3 class="text-center font-weight-bold text-light">REGISTO</h3><br>
+    <div id="container" class="d-flex justify-content-center">
+    <div id="box" class="row col-3 border rounded font-weight-bolder bg-light justify-content-center"> 
+    <form id="form"> <br>
+        <div class="form-group text-center">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" required>
+        </div>
+        <div class="form-group text-center">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="userPassword" required>
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label> 
+        </div> <br>
+        <p>Já tem conta?   <a href="LoginPage.html" class="text-warning">Entrar</a></p>
+        <div class="d-flex justify-content-center">
+        <button id="btnSubmit" type="submit" class="btn btn-warning font-weight-bold">Registar</button>
+    </div>
+      </form>
+    </div>
+</div>
+
     <script src="RegisterPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

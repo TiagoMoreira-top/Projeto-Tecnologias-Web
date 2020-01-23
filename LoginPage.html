@@ -12,34 +12,37 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
     <ul class="nav justify-content-end">
         <li><a href="#home">Sobre Nós</a></li>
-        <li><a href="#news">Registar-se</a></li>
-      </ul> <br> <br> <br> <br>
+        <li><a href="RegisterPage.html">Registar-se</a></li>
+      </ul> <br> <br>
 </head>
 <body class="bg-secondary">
+    <div id="appTitle" class="text-center"><h1 class="font-weight-bold">MY FITNESS</h1></div> <br> <br>
     <div id="container" class="d-flex justify-content-center">
-    <div id="box" class="row col-2 border rounded font-weight-bolder bg-warning"> <br>
-    <form>
-        <div class="form-group">
+    <div id="box" class="row col-3 border rounded font-weight-bolder bg-light justify-content-center"> 
+    <form id="form"> <br>
+        <div class="form-group text-center">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+          <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" required>
         </div>
-        <div class="form-group">
+        <div class="form-group text-center">
           <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" required>
+          <input type="password" class="form-control" id="userPassword" required>
         </div>
         <div class="form-group form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1" required>Check me out</label>
-        </div>
-        <p>Não tem conta?<a href="RegisterPage.html">Criar</a></p>
-        <div id="btnSubmit"class="d-flex justify-content-center">
-        <button type="submit" class="btn btn-primary">Login</button>
+          <label class="form-check-label" for="exampleCheck1">Check me out</label> 
+        </div> <br>
+        <p>Não tem conta?   <a href="RegisterPage.html" class="text-warning">Criar</a></p>
+        <div class="d-flex justify-content-center">
+        <button id="btnSubmit" type="submit" class="btn btn-warning font-weight-bold">Login</button>
     </div>
       </form>
     </div>
 </div>
 
+
     <script src="LoginPage.js"></script>
+    <script src="dataTransfer.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

@@ -25,3 +25,7 @@ ul {
     text-decoration: none;
     color: #f1f1f1;
   }
+
+  #btnSubmit {
+    margin-bottom: 20px;
+}
