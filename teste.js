@@ -15,7 +15,7 @@ getCategories()
 document.getElementById("btnTrainningPlan").addEventListener("click", function () {
     const categoryElement = document.querySelector("#sltCategory")
     const categoryValue = categoryElement.options[categoryElement.selectedIndex].value
-  getExercicesByCategory(categoryValue)
+    getExercicesByCategory(categoryValue)
 })
 
 async function getEatingPlan(category) {
@@ -52,21 +52,40 @@ async function getExercicesByCategory(value) {
         }
     }
     document.getElementById("btnEatingPlan").innerHTML += ` <br> <button class="btn btn-warning">Plano Alimentar</button> <br> <br>`
-    const images = json[value].images
-    console.log(images);
-    document.getElementById("images").innerHTML = `<img id="img0"
-    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_214657508_Preview.jpeg"
-    alt="">
-<img id="img1"
-    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_164712654_Preview.jpeg"
-    alt="">
-<img id="img2"
-    src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_195637927_Preview.jpeg"
-    alt="">`
-    if (images) {
-        for (let i = 0; i < images.length; i++) {
-            image = images[i][`strImg`]
-            document.getElementById(`img${i}`).src = `C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/${image}`
-        }
+    /*  const images = json[value].images
+     console.log(images);
+     document.getElementById("images").innerHTML = `<img id="img0"
+     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_214657508_Preview.jpeg"
+     alt="">
+ <img id="img1"
+     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_164712654_Preview.jpeg"
+     alt="">
+ <img id="img2"
+     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_195637927_Preview.jpeg"
+     alt="">`
+     if (images) {
+         for (let i = 0; i < images.length; i++) {
+             image = images[i][`strImg`]
+             document.getElementById(`img${i}`).src = `C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/${image}`
+         }
+     } */
+}
+console.log(document.getElementById("body").className);
+
+    if (localStorage.getItem("theme") != undefined) {
+    document.getElementById("body").className = `theme${localStorage.getItem("theme")}`
     }
+    console.log(document.getElementById("body").className);
+
+function setLocalTheme() {
+    if (document.getElementById("body").className == "themeLightGrey") {
+        localStorage.setItem("theme", "LightGrey")
+    } else if (document.getElementById("body").className == "themeDark") {
+        localStorage.setItem("theme", "Dark")
+    }
+}
+
+function changeTheme() {
+    document.getElementById("body").classList.toggle("themeLightGrey")
+    document.getElementById("body").classList.toggle("themeDark")
 }

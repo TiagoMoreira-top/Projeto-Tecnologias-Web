@@ -10,12 +10,12 @@
     {
     "idCategory": 2,
     "strCategory": "football",
-    "exercises": [{"idExercise": 1, "strExercise": "Push-Ups", "strYoutube": "https://www.youtube.com/watch?v=IODxDxX7oi4", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Shoulder Press", "strYoutube": "https://www.youtube.com/watch?v=5yWaNOvgFCM", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
+    "exercises": [{"idExercise": 1, "strExercise": "Flexões", "strYoutube": "https://www.youtube.com/watch?v=IODxDxX7oi4", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Press de Ombro", "strYoutube": "https://www.youtube.com/watch?v=5yWaNOvgFCM", "strExecution": ""}, {"idExercise": 3, "strExercise": "Agachamento", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "Burpies", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "Lunges", "strYoutube": "", "strExecution": ""}]
     },
     {
     "idCategory": 3,
     "strCategory": "basketball",
-    "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
+    "exercises": [{"idExercise": 1, "strExercise": "Agachamentos", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
     },
     {
     "idCategory": 4,
@@ -25,7 +25,7 @@
     {
     "idCategory": 5,
     "strCategory": "swimming",
-     "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
+     "exercises": [{"idExercise": 1, "strExercise": "Flexões Abertas", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Flexões fechadas", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}]
     },
     {
     "idCategory": 6,
