@@ -140,7 +140,7 @@ if (userHeight && userWeight) {
         response = "Obesidade grau I"
     } else if (imc >= 35 && imc <= 39.9) {
      response = "Obesidade grau II"   
-    }
-    document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é <span class="font-weight-bold">${response} </span>`
+    } 
+document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} Está dentro do <span class="font-weight-bold">${response} </span>`
 } else alert("Preencha os dados")
 }
