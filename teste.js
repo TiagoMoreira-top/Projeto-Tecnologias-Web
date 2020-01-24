@@ -31,9 +31,12 @@ async function getEatingPlan(value) {
     document.getElementById("eatingPlan").innerHTML = ""
     console.log(json[value].breakfast[0].meal);
     const breakfast = json[value].breakfast
+    document.getElementById("eatingPlan").innerHTML += `Pequeno Almoço: <br> <ul id="breakfastOptions"> </ul>`
     for (let i = 0; i < breakfast.length; i++) {
-        document.getElementById("eatingPlan").innerHTML = `<div> <p> ${breakfast[i].meal} </p> </div>`
+        document.getElementById("breakfastOptions").innerHTML += ` <li> ${breakfast[i].meal} </li> `
     }
+    document.getElementById("eatingPlan").innerHTML += `Almoço: <br> <ul id="lunchOptions"> </ul>`
+    document.getElementById("eatingPlan").innerHTML += `Jantar: <br> <ul id="dinnerOptions"> </ul>`
 }
 
 async function getExercicesByCategory(value) {
