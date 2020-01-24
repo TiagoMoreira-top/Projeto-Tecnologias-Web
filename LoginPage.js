@@ -1,3 +1,5 @@
+let key
+
 function confirmUser() {
 
     const userEmail = document.getElementById("userEmail").value
@@ -8,6 +10,8 @@ function confirmUser() {
         console.log(userEmail);
         if (userEmail == JSON.parse(localStorage.getItem("usersData"))[i].email) {
             if (userPassword == JSON.parse(localStorage.getItem("usersData"))[i].password) {
+                key = i
+                localStorage.setItem("user", i)
                 window.location.href = "teste.html";
             } else alert("Password Incorreta!")
         }

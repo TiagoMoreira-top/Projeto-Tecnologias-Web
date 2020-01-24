@@ -35,6 +35,7 @@ console.log(checkEmail);
 }
 
 document.getElementById("btnSubmit").addEventListener("click", function (e) {
+    console.log(document.getElementById("form").checkValidity());
     if (document.getElementById("form").checkValidity() == true) {
         e.preventDefault()
         addUser()
