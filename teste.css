@@ -5,7 +5,7 @@ body {
 }
 
 .themeLightGrey {
-    background: #707070;
+    background: #d8d5d2;
 }
 
 .themeDark {
@@ -26,24 +26,27 @@ margin: auto;
 border-radius: 10px; 
 } 
 
-.blue {
-    background-color: #57bff2;
+.lightGrey {
+    background-color: #5c7a96;
     color: #f1f1f1;
     width: 400px;
-    height: 300px;
+    height: 320px;
     text-align: center;
-margin-right: 10px;
-margin-bottom: 10px;
+    margin: 10px;
+
 }
 
-.lightGrey {
-    background-color: #57bff2;
+.blue {
+    background-color: #74c4df;
     color: #f1f1f1;
     width: 400px;
-    height: 300px;
+    height: 320px;
     text-align: center;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+}
+
+.red {
+    padding: 10px;
 }
 
 #sltCategory {
@@ -52,6 +55,7 @@ margin-bottom: 10px;
     width: 200px;
     height: 40px;
 }
+
 
 
 #img0, #img1, #img2 {
@@ -68,10 +72,8 @@ margin-bottom: 10px;
 ul {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
-    margin: 10px;
-    padding: 0px;
     overflow: hidden;
-    background-color: #73cbd9;
+    background-color: #0ad5dd;
 
   }
   
@@ -88,7 +90,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #256b76;
+    background-color: #129ea4;
     text-decoration: none;
     color: #f1f1f1;
   }

@@ -42,11 +42,11 @@ async function getExercicesByCategory(value) {
         const repetitions = exercises[i][`repetitions`]
         const series = exercises[i][`series`]
         if (exercise && color == "grey") {
-            document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
+            document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
             document.getElementById(`${id}`).classList.add("text-uppercase")
             color = "dark"
         } else if (exercise && color == "dark") {
-            document.getElementById("exercises").innerHTML += `<div class="text-light lightGrey rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
+            document.getElementById("exercises").innerHTML += `<div class="text-light lightGrey rounded-left rounded-right"> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
             document.getElementById(`${id}`).classList.add("text-uppercase")
             color = "grey"
         }
