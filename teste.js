@@ -125,6 +125,7 @@ function showIMC() {
     const userHeight = document.getElementById("userHeight").value
     const userWeight = document.getElementById("userWeight").value
     let imc = userWeight / ((userHeight/100) * (userHeight/100))
+    imc = Math.round(imc)
     console.log(userWeight);
     console.log(userHeight);
     console.log(imc);
@@ -141,6 +142,11 @@ if (userHeight && userWeight) {
     } else if (imc >= 35 && imc <= 39.9) {
      response = "Obesidade grau II"   
     } 
-document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} Está dentro do <span class="font-weight-bold">${response} </span>`
+document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} e está dentro do <span class="font-weight-bold">${response} </span>`
 } else alert("Preencha os dados")
 }
+
+const user = localStorage.getItem("user")
+console.log(JSON.parse(localStorage.getItem("usersData"))[user]);
+const name = JSON.parse(localStorage.getItem("usersData"))[user].name
+document.getElementById("user").innerHTML = name

@@ -22,10 +22,12 @@ function addUser() {
 console.log(checkEmail);
 
   if (checkEmail == 0) {
+      const userName = document.getElementById("userName").value
         const userEmail = document.getElementById("userEmail").value
         const userPassword = document.getElementById("userPassword").value
 
         const obj = {
+            name: userName,
             email: userEmail,
             password: userPassword
         }
