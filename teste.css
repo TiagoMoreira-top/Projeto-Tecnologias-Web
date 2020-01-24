@@ -1,7 +1,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #f1f1f1;
+    background: #d8d5d2;
 }
 
 .themeLightGrey {
@@ -9,7 +9,7 @@ body {
 }
 
 .themeDark {
-    background: #101010;
+    background: linear-gradient(to right, #6495ED , #287695);
 }
 
 #alter {
@@ -20,9 +20,6 @@ body {
 #box {
 text-align: center;
 background-color: white ;
-width: 600px;
-height: 300px;
-margin: auto;  
 border-radius: 10px; 
 } 
 
@@ -75,10 +72,6 @@ ul {
     overflow: hidden;
     background-color: #0ad5dd;
 
-  }
-  
-  li {
-    float: left;
   }
   
   li a {

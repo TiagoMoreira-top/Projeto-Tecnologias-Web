@@ -18,37 +18,44 @@
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
     </nav>-->
     <ul class="nav justify-content-end">
-        <li><a href="#home">Sobre Nós</a></li>
-        <li><a href="#news">Registar-se</a></li>
-        <li><a href="#contact">Entrar</a></li>
-        <li><a href="#about">Disabled</a></li>
+        <li><a href="searchGyms.html">Ginásios perto de si</a></li>
+        <li><a href="aboutUs.html">Sobre Nós</a></li>
+        <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
+        <li><a href="LoginPage.html">Terminar Sessão</a></li>
       </ul> <br>
 </head>
 
 <body id="body" class="themeLightGrey">
-    <div id="container">
-        <div id="box">
-            <h1 for="sltCategory" class="tipos">Tipos de treino <img id="alter"
+    <div id="container" class="d-flex justify-content-center">
+        <div id="box" class="col-5">
+            <h1 for="sltCategory" class="tipos font-weight-bold">Tipos de treino <!-- <img id="alter"
                     src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/depositphotos_5927512-stock-photo-dumbbells.jpg"
-                    alt=""></h1>
+                    alt=""> --></h1>
                     <div class="row justify-content-center">
-            <select id="sltCategory" class="form-control col-4">
+            <select id="sltCategory" class="form-control col-4 border-dark">
             </select> </div> <br>
-            <div id="inputWeight" class="input-group row justify-content-center">
-                <select class="custom-select form-control col-4" id="sltWeight">
-                    <option disabled selected>Current Weight</option>
-                    <option value="1">Between 50-75 Kg</option>
-                    <option value="2">Between 75-90 Kg</option>
-                    <option value="3">More</option>
+            <div id="inputWeight" class="row justify-content-center">
+                <select class="form-control col-4 border-dark" id="sltWeight">
+                    <option disabled selected>Peso Atual</option>
+                    <option value="1">Inferior</option>
+                    <option value="2">Entre 50-75 Kg</option>
+                    <option value="3">Entre 75-90 Kg</option>
+                    <option value="4">Superior</option>
                 </select>
             </div>
             <br>
-            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning">Plano de Treino</button> <br> <br>
-        </div>
+            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning border-dark">Plano de Treino</button> <br> <br>
+            <button id="btnEatingPlan" class="d-none btn btn-secondary btn-warning border-dark"></button>
+        </div> 
+    </div>
+        
         <div id="categoryTitle" class="text-light text-uppercase"></div>
-        <div id="exercises" class="d-flex justify-content-center flex-wrap"></div>
-        <div id="btnEatingPlan" class="row justify-content-center"></div>
-        <div id="images">
+        <div id="exercises" class="d-flex justify-content-center flex-wrap text-center"></div>
+        <div id="eatingPlan" class=""></div> 
+        
+
+        
+      <!--   <div id="images">
             <img id="img0"
                 src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/AdobeStock_214657508_Preview.jpeg"
                 alt="">
@@ -58,9 +65,12 @@
             <img id="img2"
                 src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/AdobeStock_195637927_Preview.jpeg"
                 alt="">
-        </div>
-    </div>
+        </div> -->
+    
+    
+   
     <script src="teste.js"></script>
+    <script src="dataTransfer.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
