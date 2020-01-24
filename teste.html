@@ -22,6 +22,18 @@
 </head>
 
 <body id="body" class="themeLightGrey">
+    <div id="alertBoxGetIMC" class="d-none row justify-content-center">
+        <div class="alert alert-info row col-4 justify-content-center" role="alert">
+            <h4 class="alert-heading">Cálculo do Indíce de Massa Corporal</h4> 
+            <h6>Altura(cm)</h6>
+            <input id="userHeight" class="form-control" type="number">
+            <h6>Peso(Kg)</h6>
+            <input id="userWeight" class="form-control" type="number"> <br> <br>
+            <button id="btnGetIMC" class="form-control col-4">Calcular</button>
+            <button id="btnCloseAlertBox" class="form-control col-4">Fechar</button> <br>
+            <h6 id="showIMC"></h6>
+          </div>
+        </div>
     <div id="container" class="d-flex justify-content-center">
         <div id="box" class="col-5">
             <h1 for="sltCategory" class="tipos font-weight-bold">Tipos de treino <!-- <img id="alter"
@@ -31,13 +43,7 @@
             <select id="sltCategory" class="form-control col-4 border-dark">
             </select> </div> <br>
             <div id="inputWeight" class="row justify-content-center">
-                <select class="form-control col-4 border-dark" id="sltWeight">
-                    <option disabled selected>Peso Atual</option>
-                    <option value="1">Inferior</option>
-                    <option value="2">Entre 50-75 Kg</option>
-                    <option value="3">Entre 75-90 Kg</option>
-                    <option value="4">Superior</option>
-                </select>
+             <button id="btnIMC" class="form-control col-3 border-dark rounded">IMC</button>
             </div>
             <br>
             <button id="btnTrainningPlan" class="btn btn-secondary btn-warning border-dark">Plano de Treino</button> <br> <br>
