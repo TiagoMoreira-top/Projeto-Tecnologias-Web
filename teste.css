@@ -5,11 +5,11 @@ body {
 }
 
 .themeLightGrey {
-    background: #707070;
+    background: linear-gradient(to right, #707070 , #516875);
 }
 
 .themeDark {
-    background: #6495ED;
+    background: linear-gradient(to right, #6495ED , #287695);
 }
 
 #alter {
