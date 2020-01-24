@@ -20,7 +20,7 @@ body {
 #box {
 text-align: center;
 background-color: white ;
-width: 600px;
+width: 500px;
 height: 300px;
 margin: auto;  
 border-radius: 10px; 
@@ -28,20 +28,17 @@ border-radius: 10px;
 
 .blue {
     background-color: #57bff2;
-    color: #f1f1f1;
     width: 400px;
-    height: 300px;
-    text-align: center;
+    height: 320px;
 margin-right: 10px;
 margin-bottom: 10px;
+border: #fff;
 }
 
 .lightGrey {
     background-color: #57bff2;
-    color: #f1f1f1;
     width: 400px;
-    height: 300px;
-    text-align: center;
+    height: 320px;
     margin-right: 10px;
     margin-bottom: 10px;
 }

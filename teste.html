@@ -20,8 +20,8 @@
     <ul class="nav justify-content-end">
         <li><a id="userName" href=""></a></li>
         <li><a href="#home">Sobre Nós</a></li>
-        <li><a href="#news">Registar-se</a></li>
-        <li><a href="#contact">Entrar</a></li>
+        <li><a href="RegisterPage.html">Registar-se</a></li>
+        <li><a href="LoginPage.html">Entrar</a></li>
         <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
       </ul> <br>
 </head>
@@ -33,10 +33,10 @@
                     src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/depositphotos_5927512-stock-photo-dumbbells.jpg"
                     alt=""> --></h1>
                     <div class="row justify-content-center">
-            <select id="sltCategory" class="form-control col-4">
+            <select id="sltCategory" class="form-control col-4 border-dark">
             </select> </div> <br>
             <div id="inputWeight" class="row justify-content-center">
-                <select class="form-control col-4" id="sltWeight">
+                <select class="form-control col-4 border-dark" id="sltWeight">
                     <option disabled selected>Current Weight</option>
                     <option value="1">Between 50-75 Kg</option>
                     <option value="2">Between 75-90 Kg</option>
@@ -44,11 +44,13 @@
                 </select>
             </div>
             <br>
-            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning">Plano de Treino</button> <br> <br>
+            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning border-dark">Plano de Treino</button> <br> <br>
+            <button id="btnEatingPlan" class="d-none btn btn-secondary btn-warning border-dark"></button>
         </div>
         <div id="categoryTitle" class="text-light text-uppercase"></div>
-        <div id="exercises" class="d-flex justify-content-center flex-wrap"></div>
-        <div id="btnEatingPlan" class="row justify-content-center"></div>
+        <div id="exercises" class="d-flex justify-content-center flex-wrap text-center"></div>
+        <div id="eatingPlan" class="d-flex justify-content-center flex-wrap text-center"></div>
+        
       <!--   <div id="images">
             <img id="img0"
                 src="C:\Users\tdfmo\OneDrive\Ambiente de Trabalho\Tiago\ProjetoTW\Imagens/AdobeStock_214657508_Preview.jpeg"
