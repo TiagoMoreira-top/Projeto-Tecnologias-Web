@@ -10,10 +10,15 @@ function confirmUser() {
         console.log(userEmail);
         if (userEmail == JSON.parse(localStorage.getItem("usersData"))[i].email) {
             if (userPassword == JSON.parse(localStorage.getItem("usersData"))[i].password) {
+                document.getElementById("alertBoxDanger").classList.add("d-none")
+                document.getElementById("alertBoxDanger").classList.remove("d-flex")
                 key = i
                 localStorage.setItem("user", i)
                 window.location.href = "teste.html";
-            } else alert("Password Incorreta!")
+            } else {
+                document.getElementById("alertBoxDanger").classList.remove("d-none")
+                document.getElementById("alertBoxDanger").classList.add("d-flex")
+            }
         }
     }
 }

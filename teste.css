@@ -5,7 +5,7 @@ body {
 }
 
 .themeLightGrey {
-    background: #d8d5d2;
+    background: linear-gradient(to right, #d8d5d2 , #9494b8);
 }
 
 .themeDark {

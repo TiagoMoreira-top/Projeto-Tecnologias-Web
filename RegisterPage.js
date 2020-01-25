@@ -14,8 +14,12 @@ function addUser() {
             console.log(userEmail);
             if (userEmail == JSON.parse(localStorage.getItem("usersData"))[i].email) {
                 checkEmail = 1
-                document.getElementById("alertBox").classList.toggle("d-flex")
-                document.getElementById("alertBox").classList.toggle("d-none")
+            }
+            if (checkEmail == 1) {
+                document.getElementById("alertBoxSuccess").classList.add("d-none")
+                document.getElementById("alertBoxSuccess").classList.remove("d-flex")
+                document.getElementById("alertBoxDanger").classList.add("d-flex")
+                document.getElementById("alertBoxDanger").classList.remove("d-none")
             }
         }
     }
@@ -33,6 +37,10 @@ console.log(checkEmail);
         }
         users.push(obj)
         localStorage.setItem("usersData", JSON.stringify(users))
+        document.getElementById("alertBoxDanger").classList.add("d-none")
+        document.getElementById("alertBoxDanger").classList.remove("d-flex")
+        document.getElementById("alertBoxSuccess").classList.add("d-flex")
+        document.getElementById("alertBoxSuccess").classList.remove("d-none")
     }
 }
 
