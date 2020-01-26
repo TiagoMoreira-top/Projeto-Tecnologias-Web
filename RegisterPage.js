@@ -33,7 +33,8 @@ console.log(checkEmail);
         const obj = {
             name: userName,
             email: userEmail,
-            password: userPassword
+            password: userPassword,
+            theme: "themeLightGrey"
         }
         users.push(obj)
         localStorage.setItem("usersData", JSON.stringify(users))

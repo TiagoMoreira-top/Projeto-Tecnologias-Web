@@ -89,18 +89,28 @@ async function getExercicesByCategory(value) {
          }
      } */
 }
-console.log(document.getElementById("body").className);
 
-if (localStorage.getItem("theme") != undefined) {
-    document.getElementById("body").className = `theme${localStorage.getItem("theme")}`
+key = localStorage.getItem("user")
+const userTheme = JSON.parse(localStorage.getItem("usersData"))[key].theme
+if (userTheme == "themeLightGrey") {
+    document.getElementById("body").classList.add("themeLightGrey")
 }
-console.log(document.getElementById("body").className);
+if (userTheme == "themeDark") {
+    document.getElementById("body").classList.add("themeDark")
+}
+
 
 function setLocalTheme() {
     if (document.getElementById("body").className == "themeLightGrey") {
-        localStorage.setItem("theme", "LightGrey")
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeLightGrey"
+        localStorage.setItem("usersData", JSON.stringify(newData))
     } else if (document.getElementById("body").className == "themeDark") {
-        localStorage.setItem("theme", "Dark")
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeDark"
+        localStorage.setItem("usersData", JSON.stringify(newData))
     }
 }
 
