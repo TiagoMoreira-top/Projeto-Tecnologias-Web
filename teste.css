@@ -1,15 +1,14 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background: #d8d5d2;
 }
 
 .themeLightGrey {
-    background: linear-gradient(to right, #d8d5d2 , #9494b8);
+    background: linear-gradient(to right, #d8d5d2 , #7a7a97);
 }
 
 .themeDark {
-    background: linear-gradient(to right, #6495ED , #287695);
+    background: linear-gradient(to right, #6495ED , #176b8d);
 }
 
 #alter {

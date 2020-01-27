@@ -1,4 +1,5 @@
-if (localStorage.getItem("theme") == "dark") {
+key = JSON.parse(localStorage.getItem("user"))
+if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
     document.getElementById("body").classList.remove("themeLightGrey")
     document.getElementById("body").classList.add("themeDark")
 }
@@ -117,6 +118,5 @@ function changeTheme() {
 }
 
 const user = localStorage.getItem("user")
-console.log(JSON.parse(localStorage.getItem("usersData"))[user]);
 const name = JSON.parse(localStorage.getItem("usersData"))[user].name
 document.getElementById("user").innerHTML = name
