@@ -1,3 +1,28 @@
+key = JSON.parse(localStorage.getItem("user"))
+if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
+    document.getElementById("body").classList.remove("themeLightGrey")
+    document.getElementById("body").classList.add("themeDark")
+}
+
+function setLocalTheme() {
+    if (document.getElementById("body").className == "themeLightGrey") {
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeLightGrey"
+        localStorage.setItem("usersData", JSON.stringify(newData))
+    } else if (document.getElementById("body").className == "themeDark") {
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeDark"
+        localStorage.setItem("usersData", JSON.stringify(newData))
+    }
+}
+
+function changeTheme() {
+    document.getElementById("body").classList.toggle("themeLightGrey")
+    document.getElementById("body").classList.toggle("themeDark")
+}
+
 document.getElementById("btnGetIMC").addEventListener("click", function() {
     showIMC()
 })
