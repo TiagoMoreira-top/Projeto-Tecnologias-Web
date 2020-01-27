@@ -47,7 +47,6 @@ async function getExercicesByCategory(value) {
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("btnEatingPlan").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = `<br> <h1 class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
@@ -67,9 +66,7 @@ async function getExercicesByCategory(value) {
             color = "grey"
         }
     }
-    document.getElementById("btnEatingPlan").classList.remove("d-none")
-    document.getElementById("btnEatingPlan").innerHTML = "Plano Alimentar"
-    document.getElementById("box").style.height = "350px"
+    
 
     /*  const images = json[value].images
      console.log(images);
@@ -117,43 +114,6 @@ function setLocalTheme() {
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
     document.getElementById("body").classList.toggle("themeDark")
-}
-
-document.getElementById("btnIMC").addEventListener("click", function() {
-    document.getElementById("alertBoxGetIMC").classList.remove("d-none")
-})
-
-document.getElementById("btnCloseAlertBox").addEventListener("click", function() {
-    document.getElementById("alertBoxGetIMC").classList.add("d-none")
-})
-
-document.getElementById("btnGetIMC").addEventListener("click", function() {
-    showIMC()
-})
-
-function showIMC() {
-    const userHeight = document.getElementById("userHeight").value
-    const userWeight = document.getElementById("userWeight").value
-    let imc = userWeight / ((userHeight/100) * (userHeight/100))
-    imc = Math.round(imc)
-    console.log(userWeight);
-    console.log(userHeight);
-    console.log(imc);
-    let response
-if (userHeight && userWeight) {
-    if (imc < 18.5) {
-        response = "Baixo Peso"
-    } else if (imc >= 18.5 && imc <= 24.9) {
-        response = "Peso Normal"
-    } else if (imc >= 25 && imc <= 29.9) {
-        response = "Pré-Obesidade"
-    } else if (imc >= 30 && imc <= 34.9) {
-        response = "Obesidade grau I"
-    } else if (imc >= 35 && imc <= 39.9) {
-     response = "Obesidade grau II"   
-    } else response = "Não faças exercício que não é preciso"
-document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} e está dentro do <span class="font-weight-bold">${response} </span>`
-} else alert("Preencha os dados")
 }
 
 const user = localStorage.getItem("user")

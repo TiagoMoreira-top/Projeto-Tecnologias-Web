@@ -7,10 +7,28 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="teste.css">
+        <ul class="nav justify-content-end">
+            <li><a id="user" href="teste.html">Home</a></li>
+            <li><a href="#about">Alterar tema</a></li>
+            <li><a href="LoginPage.html">Terminar Sessão</a></li>
+          </ul> <br>
 </head>
-<body class="bg-secondary">
+<body class="bg-secondary"> <br> <br>
+    <div id="alertBoxGetIMC" class="row justify-content-center">
+        <div class="alert alert-info row col-4 justify-content-center" role="alert">
+            <h4 class="alert-heading">Cálculo do seu Indíce de Massa Corporal</h4> 
+            <h6>Altura(cm)</h6>
+            <input id="userHeight" class="form-control" type="number">
+            <h6>Peso(Kg)</h6>
+            <input id="userWeight" class="form-control" type="number"> <br> <br>
+            <button id="btnGetIMC" class="form-control col-4">Calcular</button>
+             <br>
+            <h6 id="showIMC"></h6>
+          </div>
+        </div>
 
-    <script src="dataTransfer.js"></script>
+    <script src="userData.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
