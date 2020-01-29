@@ -28,16 +28,21 @@ document.getElementById("btnEatingPlan").addEventListener("click", function () {
 async function getEatingPlan(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
+    console.log(json);
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("eatingPlan").innerHTML = ""
     console.log(json[value].breakfast[0].meal);
     const breakfast = json[value].breakfast
-    document.getElementById("eatingPlan").innerHTML += `Pequeno Almoço: <br> <ul id="breakfastOptions"> </ul>`
+    const lunch = json[value].lunch
+    const dinner = json[value].dinner
+    document.getElementById("eatingPlan").innerHTML += `Pequeno Almoço: <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
+    document.getElementById("eatingPlan").innerHTML += `Almoço: <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    document.getElementById("eatingPlan").innerHTML += `Jantar: <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     for (let i = 0; i < breakfast.length; i++) {
-        document.getElementById("breakfastOptions").innerHTML += ` <li> ${breakfast[i].meal} </li> `
+        document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <p> ${breakfast[i].meal} </p></div>`
+        document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${lunch[i].meal} </p></div> `
+    document.getElementById("dinnerOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${dinner[i].meal} </p></div> `
     }
-    document.getElementById("eatingPlan").innerHTML += `Almoço: <br> <ul id="lunchOptions"> </ul>`
-    document.getElementById("eatingPlan").innerHTML += `Jantar: <br> <ul id="dinnerOptions"> </ul>`
 }
 
 async function getExercicesByCategory(value) {
