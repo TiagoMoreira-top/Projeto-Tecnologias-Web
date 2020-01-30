@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="searchGyms.css">
 
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end sticky-top">
         <li><a href="teste.html">Home</a></li>
         <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
-        <li><a href="LoginPage.html">Terminar Sessão</a></li>
+        <li><a onclick="deleteUserData()" href="LoginPage.html">Terminar Sessão</a></li>
       </ul> <br> <br>
 </head>
 <body id="body" class="">
@@ -21,7 +21,7 @@
     <div id="box" class="row justify-content-center">
         <div class="align_center">
         <h2>Ginásios perto de si</h2>
-        <button class="btn bg-blue rounded" type="button" onclick="initialize()">Procurar</button>
+        <button class="btn bg-blue rounded" type="button" onclick="showGyms()">Procurar</button>
     </div>
     </div> <br> <br> 
     <div id="gyms" class="row justify-content-center"></div>
