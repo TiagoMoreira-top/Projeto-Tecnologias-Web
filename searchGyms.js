@@ -5,7 +5,7 @@ let service
 
 getLocation()
 
-/* function initialize() {
+function initialize() {
 
 const userLocation = new google.maps.LatLng(userLat, userLon);
 
@@ -18,7 +18,7 @@ const request = {
   service = new google.maps.places.PlacesService(document.getElementById("abc"));
   service.nearbySearch(request, callback)
   
-} */
+}
 
 function callback(results, status) {
    console.log("entrou");
@@ -133,6 +133,7 @@ let myResults = [
       "vicinity" : "Rua Clube Naval Infante Dom Henrique 438, Valbom"
    }
 ]
+
 function showGyms() {
    document.getElementById("gyms").innerHTML = ""
 for (let i = 0; i < myResults.length; i++) {
@@ -142,3 +143,34 @@ for (let i = 0; i < myResults.length; i++) {
 console.log(myResults);
 console.log(myResults[0].name);
 console.log(myResults[0].rating);
+
+key = localStorage.getItem("user")
+const userTheme = JSON.parse(localStorage.getItem("usersData"))[key].theme
+if (userTheme == "themeLightGrey") {
+    document.getElementById("body").classList.add("themeLightGrey")
+}
+if (userTheme == "themeDark") {
+    document.getElementById("body").classList.add("themeDark")
+}
+
+
+function setLocalTheme() {
+    if (document.getElementById("body").className == "themeLightGrey") {
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeLightGrey"
+        localStorage.setItem("usersData", JSON.stringify(newData))
+    } else if (document.getElementById("body").className == "themeDark") {
+        key = localStorage.getItem("user")
+        let newData = JSON.parse(localStorage.getItem("usersData"))
+        newData[key].theme = "themeDark"
+        localStorage.setItem("usersData", JSON.stringify(newData))
+    }
+}
+
+function changeTheme() {
+   console.log(document.getElementById("body").className);
+    document.getElementById("body").classList.toggle("themeLightGrey")
+    document.getElementById("body").classList.toggle("themeDark")
+    console.log(document.getElementById("body").className);
+}
