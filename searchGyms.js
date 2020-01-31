@@ -11,7 +11,7 @@ function initialize() {
 
    const request = {
       location: userLocation,
-      radius: '2500',
+      radius: '1500',
       type: ['gym']
    }
 
