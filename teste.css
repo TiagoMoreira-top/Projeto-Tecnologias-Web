@@ -20,7 +20,8 @@ body {
 #box {
 text-align: center;
 background-color: white ;
-border-radius: 10px; 
+border-radius: 10px;
+width: 500px; 
 } 
 
 .lightGrey {
@@ -97,4 +98,32 @@ ul {
 
 #dinamicCategoryTitle:hover {
 cursor: pointer;
+}
+
+#sltCategory {
+    width: 150px;
+}
+
+#boxTitlePhone {
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+#box {
+    width: 320px;
+}    
+
+#boxTitle {
+    display: none;
+}
+
+#boxTitlePhone {
+    display: contents;
+}
+
+#sltCategory {
+    margin-top: 10px;
+}
+
 }
