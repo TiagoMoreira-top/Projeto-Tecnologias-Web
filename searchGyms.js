@@ -166,7 +166,7 @@ if (userTheme == "themeDark") {
    document.getElementById("body").classList.add("themeDark")
 }
 
-
+// alterar o tema do utilizador na local storage
 function setLocalTheme() {
    if (document.getElementById("body").className == "themeLightGrey") {
       key = localStorage.getItem("user")
@@ -181,13 +181,13 @@ function setLocalTheme() {
    }
 }
 
+// alterar o tema visualmente
 function changeTheme() {
-   console.log(document.getElementById("body").className);
    document.getElementById("body").classList.toggle("themeLightGrey")
    document.getElementById("body").classList.toggle("themeDark")
-   console.log(document.getElementById("body").className);
 }
 
+// remover os dados do utilizador ao terminar sessão
 function deleteUserData() {
    localStorage.removeItem("user")
 }
