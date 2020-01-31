@@ -23,7 +23,7 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     overflow: hidden;
-    background-color: #0ad5dd;
+    background-color: #73cbd9;
 
   }
   
@@ -36,7 +36,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #129ea4;
+    background-color: #256b76;
     text-decoration: none;
     color: #f1f1f1;
   }
