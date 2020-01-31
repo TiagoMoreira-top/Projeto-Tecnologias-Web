@@ -5,6 +5,7 @@ let service
 
 getLocation()
 
+// procurar ginásios perto do utilizador usando a api do googleMaps
 function initialize() {
 
    const userLocation = new google.maps.LatLng(userLat, userLon);
@@ -30,6 +31,7 @@ function callback(results, status) {
    }
 }
 
+// Obter a localização do utilizador
 function getLocation() {
    if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(showPosition);
