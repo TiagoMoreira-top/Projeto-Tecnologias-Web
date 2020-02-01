@@ -47,7 +47,7 @@ async function getEatingPlan(value) {
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 2; i++) {
         document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <p> ${breakfast[i].meal} </p> <br> <img class="images" src="${breakfast[i].img}"></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"> <br> <p> ${lunch[i].meal} </p> <br> <img class="images" src="${lunch[i].img}"> </div> `
         document.getElementById("dinnerOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"> <br> <p> ${dinner[i].meal} </p> <br> <img class="images" src="${dinner[i].img}"> </div> `
