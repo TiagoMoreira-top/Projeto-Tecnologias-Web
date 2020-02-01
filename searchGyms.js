@@ -134,10 +134,23 @@ let myResults = [
    }
 ]
 function showGyms() {
-   document.getElementById("gyms").innerHTML = ""
-for (let i = 0; i < myResults.length; i++) {
-   document.getElementById("gyms").innerHTML += ` <div id="${i}" class="text-light border rounded blue"> <br> <h5> ${myResults[i].name} </h5> <br> <p> Rating: <span class="font-weight-bold"> ${myResults[i].rating} </span> </p> <img class="images" src="${myResults[i].photos[0].raw_reference.fife_url}"> <div> <br> <br>`
-  }
+   let gymsDiv = document.getElementById("gyms")
+   gymsDiv.innerHTML = ""
+   for (let i = 0; i < myResults.length; i++) {
+      console.log(myResults);
+      gymsDiv.innerHTML += ` <div id="card${i}" class="text-light border rounded blue"> <br> <h5> ${myResults[i].name} </h5> <br> <div id="img${i}"> </div> <br> <br> <p> ${myResults[i].vicinity} </p> <div> `
+      if (myResults[i].photos != undefined) if (myResults[i].photos[0].raw_reference.fife_url) document.getElementById(`img${i}`).innerHTML =  `<img class="images" src="${myResults[i].photos[0].raw_reference.fife_url}"> <br>`
+      if (myResults[i].rating > 4.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star></i>  </p>` } else
+      if (myResults[i].rating > 4.25) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+      if (myResults[i].rating > 3.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
+      if (myResults[i].rating > 3.25) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+      if (myResults[i].rating > 2.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </p>` } else
+      if (myResults[i].rating > 2.25) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+      if (myResults[i].rating > 1.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
+      if (myResults[i].rating > 1.25) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+      if (myResults[i].rating > 0.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> </p>` } else
+      if (myResults[i].rating > 0.25) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star-half"></i> </p>` } else {}
+   }
 }
 console.log(myResults);
 console.log(myResults[0].name);
