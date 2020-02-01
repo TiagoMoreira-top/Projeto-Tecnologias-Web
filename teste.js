@@ -42,7 +42,7 @@ async function getEatingPlan(value) {
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     for (let i = 0; i < breakfast.length; i++) {
-        document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <p> ${breakfast[i].meal} ${breakfast[i].img} </p></div>`
+        document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <p> ${breakfast[i].meal} </p></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${lunch[i].meal} </p></div> `
     document.getElementById("dinnerOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${dinner[i].meal} </p></div> `
     }
