@@ -29,9 +29,15 @@
     "strCategory": "Voleibol",
     "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "breakfast": [{"meal": "","img":"","url":""}, {"meal": "","img":"","url":""}],
     "lunch": [{"meal": "","img":"","url":""}, {"meal":"","img":"","url":""}],
     "dinner": [{"meal":"","img":"","url":""}, {"meal":"","img":""}]},
+=======
+    "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
+    "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
+    "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
+>>>>>>> parent of 15ebff9... API complete ( Plano Alimentar ) + Add logo on home page
 =======
     "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
     "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
@@ -42,9 +48,15 @@
     "strCategory": "Natação",
      "exercises": [{"idExercise": 1, "strExercise": "Flexões Abertas", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Flexões fechadas", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}],
 <<<<<<< HEAD
+<<<<<<< HEAD
      "breakfast": [{"meal": "","img":"","url":""}, {"meal": "","img":"","url":""}],
     "lunch": [{"meal": "","img":"","url":""}, {"meal":"","img":"","url":""}],
     "dinner": [{"meal":"","img":"","url":""}, {"meal":"","img":"","url":""}]},
+=======
+     "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
+     "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
+     "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
+>>>>>>> parent of 15ebff9... API complete ( Plano Alimentar ) + Add logo on home page
 =======
      "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
      "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
@@ -55,9 +67,15 @@
     "strCategory": "Casual",
     "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}],
 <<<<<<< HEAD
+<<<<<<< HEAD
     "breakfast": [{"meal": "","img":"","url":""}, {"meal": "","img":"","url":""}],
     "lunch": [{"meal": "","img":"","url":""}, {"meal":"","img":""}],
     "dinner": [{"meal":"","img":"","url":""}, {"meal":"","img":"","url":""}]}
+=======
+    "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
+    "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
+    "dinner": [{"meal":""}, {"meal":""},{"meal":""}]}
+>>>>>>> parent of 15ebff9... API complete ( Plano Alimentar ) + Add logo on home page
 =======
     "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
     "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
