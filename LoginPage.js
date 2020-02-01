@@ -1,6 +1,5 @@
 let key
 
-// verificar se existe utilizador e enviar para a página principal
 function confirmUser() {
 
     const userEmail = document.getElementById("userEmail").value
@@ -31,7 +30,6 @@ function confirmUser() {
     }
 }
 
-// adicionar o listener ao botão de Entrar
 document.getElementById("btnSubmit").addEventListener("click", function (e) {
     if (document.getElementById("btnSubmit").checkValidity() == true) {
         e.preventDefault()

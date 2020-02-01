@@ -1,11 +1,10 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    position: relative;
 }
 
 .themeLightGrey {
-    background: linear-gradient(to right, #888684 , #696980);
+    background: linear-gradient(to right, #d8d5d2 , #7a7a97);
 }
 
 .themeDark {
@@ -20,8 +19,7 @@ body {
 #box {
 text-align: center;
 background-color: white ;
-border-radius: 10px;
-width: 500px; 
+border-radius: 10px; 
 } 
 
 .lightGrey {
@@ -71,7 +69,7 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     overflow: hidden;
-    background-color: #73cbd9;
+    background-color: #0ad5dd;
 
   }
   
@@ -84,7 +82,7 @@ ul {
   }
   
   li a:hover {
-    background-color: #256b76;
+    background-color: #129ea4;
     text-decoration: none;
     color: #f1f1f1;
   }
@@ -95,35 +93,3 @@ ul {
       font-family: 'Cabin Condensed', sans-serif;
       padding: 20px;
   }
-
-#dinamicCategoryTitle:hover {
-cursor: pointer;
-}
-
-#sltCategory {
-    width: 150px;
-}
-
-#boxTitlePhone {
-    display: none;
-}
-
-@media (max-width: 576px) {
-
-#box {
-    width: 320px;
-}    
-
-#boxTitle {
-    display: none;
-}
-
-#boxTitlePhone {
-    display: contents;
-}
-
-#sltCategory {
-    margin-top: 10px;
-}
-
-}

@@ -1,6 +1,5 @@
 let checkEmail
 
-// adicionar novo utilizador no localData
 function addUser() {
     checkEmail = 0
     users = []
@@ -24,6 +23,8 @@ function addUser() {
             }
         }
     }
+console.log(checkEmail);
+
   if (checkEmail == 0) {
       const userName = document.getElementById("userName").value
         const userEmail = document.getElementById("userEmail").value
@@ -44,7 +45,6 @@ function addUser() {
     }
 }
 
-// adicionar o listener ao botão de Registar utilizador
 document.getElementById("btnSubmit").addEventListener("click", function (e) {
     console.log(document.getElementById("form").checkValidity());
     if (document.getElementById("form").checkValidity() == true) {
