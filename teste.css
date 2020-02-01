@@ -93,3 +93,7 @@ ul {
       font-family: 'Cabin Condensed', sans-serif;
       padding: 20px;
   }
+
+#dinamicCategoryTitle:hover {
+cursor: pointer;
+}
