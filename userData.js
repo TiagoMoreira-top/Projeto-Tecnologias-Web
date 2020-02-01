@@ -51,3 +51,7 @@ if (userHeight && userWeight) {
 document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} e está dentro do <span class="font-weight-bold">${response} </span>`
 } else alert("Preencha os dados")
 }
+
+function deleteUserData() {
+    localStorage.removeItem("user")
+}

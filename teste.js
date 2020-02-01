@@ -31,13 +31,19 @@ async function getEatingPlan(value) {
     console.log(json);
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("eatingPlan").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1>`
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+        document.getElementById("eatingPlan").innerHTML = ""
+        document.getElementById("categoryTitle").innerHTML = ""
+    })
     console.log(json[value].breakfast[0].meal);
     const breakfast = json[value].breakfast
     const lunch = json[value].lunch
     const dinner = json[value].dinner
-    document.getElementById("eatingPlan").innerHTML += `Pequeno Almoço: <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
-    document.getElementById("eatingPlan").innerHTML += `Almoço: <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
-    document.getElementById("eatingPlan").innerHTML += `Jantar: <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     for (let i = 0; i < breakfast.length; i++) {
         document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <p> ${breakfast[i].meal} ${breakfast[i].img} </p></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${lunch[i].meal} </p></div> `
@@ -53,7 +59,11 @@ async function getExercicesByCategory(value) {
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<br> <h1 class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+        document.getElementById("exercises").innerHTML = ""
+        document.getElementById("categoryTitle").innerHTML = ""
+    })
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]

@@ -10,13 +10,9 @@ body {
     background-color: #74c4df;
     color: #f1f1f1;
     width: 400px;
-    height: 320px;
+    height: 350px;
     text-align: center;
     margin: 10px;
-}
-
-.bg-blue {
-    background-color: #74c4df;
 }
 
 .align_center {
@@ -47,7 +43,7 @@ ul {
 
   .images {
       width: 150px;
-      height: 150px;
+      height: 250px;
   }
 
   .themeLightGrey {

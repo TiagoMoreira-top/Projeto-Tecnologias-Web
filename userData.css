@@ -1,0 +1,11 @@
+#boxIMC {
+    width: 500px;
+}
+
+@media (max-width: 576px) {
+
+#boxIMC {
+width: 300px;
+}
+
+}

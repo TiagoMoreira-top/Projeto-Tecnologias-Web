@@ -13,11 +13,11 @@
     <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
    
-    <ul class="nav justify-content-end">
+    <ul class="nav justify-content-end sticky-top">
         <li><a href="searchGyms.html">Ginásios perto de si  <i class="fa fa-search"></i></a></li>
         <li><a id="user" href="userData.html">Sobre Nós</a></li>
         <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
-        <li><a href="LoginPage.html">Terminar Sessão</a></li>
+        <li><a onclick="deleteUserData()" href="LoginPage.html">Terminar Sessão</a></li>
       </ul> <br> <br>
 </head>
 
@@ -39,11 +39,11 @@
             <h1 id="boxTitlePhone" for="sltCategory" class="tipos font-weight-bold">Treino </h1>
             <h1 id="boxTitle" for="sltCategory" class="tipos font-weight-bold">Escolhe o teu tipo de treino </h1>
                     <div class="row justify-content-center">
-            <select id="sltCategory" class="form-control col-4 border-dark">
+            <select id="sltCategory" class="form-control border-dark">
             </select> </div> <br>
             <br>
-            <button id="btnTrainningPlan" class="btn btn-secondary btn-warning border-dark">Plano de Treino</button> 
-            <button id="btnEatingPlan" class="btn btn-secondary btn-warning border-dark">Plano Alimentar</button> <br> <br> <br>
+            <button id="btnTrainningPlan" class="btn btn-warning border-dark">Plano de Treino</button> 
+            <button id="btnEatingPlan" class="btn btn-warning border-dark">Plano Alimentar</button> <br> <br> <br>
         </div> 
     </div>
         
