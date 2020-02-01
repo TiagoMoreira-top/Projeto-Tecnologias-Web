@@ -72,6 +72,7 @@ async function getExercicesByCategory(value) {
             color = "grey"
         }
     }
+    
 
     /*  const images = json[value].images
      console.log(images);
