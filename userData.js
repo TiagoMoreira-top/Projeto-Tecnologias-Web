@@ -18,18 +18,15 @@ function setLocalTheme() {
     }
 }
 
-// alterar o tema visualmente
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
     document.getElementById("body").classList.toggle("themeDark")
 }
 
-// adicionar o listener ao butão de calcular o IMC
 document.getElementById("btnGetIMC").addEventListener("click", function() {
     showIMC()
 })
 
-// calcular o IMC
 function showIMC() {
     const userHeight = document.getElementById("userHeight").value
     const userWeight = document.getElementById("userWeight").value
@@ -53,9 +50,4 @@ if (userHeight && userWeight) {
     } else if (imc > 40) response = "Obesidade grau III"
 document.getElementById("showIMC").innerHTML = `O seu índice de massa corporal é ${imc} e está dentro do <span class="font-weight-bold">${response} </span>`
 } else alert("Preencha os dados")
-}
-
-// remover os dados do utilizador ao terminar sessão
-function deleteUserData() {
-    localStorage.removeItem("user")
 }

@@ -10,22 +10,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="searchGyms.css">
 
-    <ul class="nav justify-content-end sticky-top">
+    <ul class="nav justify-content-end">
         <li><a href="teste.html">Home</a></li>
         <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
-        <li><a onclick="deleteUserData()" href="LoginPage.html">Terminar Sessão</a></li>
+        <li><a href="LoginPage.html">Terminar Sessão</a></li>
       </ul> <br> <br>
 </head>
-<body id="body" class="">
+<body class="bg-secondary">
     <div id="abc"></div>
     <div id="box" class="row justify-content-center">
         <div class="align_center">
         <h2>Ginásios perto de si</h2>
-        <button class="btn btn-warning border-dark" type="button" onclick="initialize()">Procurar</button>
+        <button class="btn bg-blue rounded" type="button" onclick="showGyms(), initialize()">Procurar</button>
     </div>
     </div> <br> <br> 
     <div id="gyms" class="row justify-content-center"></div>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARbpqWA_HZW5QMiGkcBU3OjOvlZSdUWXo&libraries=places"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAA1nMi1QDSZ1w7pJ6InpthhFgM9zVeaCI&libraries=places"></script>
     <script src="searchGyms.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
