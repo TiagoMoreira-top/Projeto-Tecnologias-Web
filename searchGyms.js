@@ -7,7 +7,16 @@ getLocation()
 
 /* function initialize() {
 
-const userLocation = new google.maps.LatLng(userLat, userLon);
+   const userLocation = new google.maps.LatLng(userLat, userLon);
+
+   const request = {
+      location: userLocation,
+      radius: '2500',
+      type: ['gym']
+   }
+
+   service = new google.maps.places.PlacesService(document.getElementById("abc"));
+   service.nearbySearch(request, callback)
 
 const request = {
     location: userLocation,
