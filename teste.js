@@ -4,6 +4,7 @@ if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
     document.getElementById("body").classList.add("themeDark")
 }
 
+// mostrar as categorias na barra de seleção
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -13,6 +14,7 @@ async function getCategories() {
 }
 getCategories()
 
+// adicionar listeners aos botões do plano de treino e alimentar
 document.getElementById("btnTrainningPlan").addEventListener("click", function () {
     const categoryElement = document.querySelector("#sltCategory")
     const categoryValue = categoryElement.options[categoryElement.selectedIndex].value
@@ -25,6 +27,7 @@ document.getElementById("btnEatingPlan").addEventListener("click", function () {
     getEatingPlan(categoryValue)
 })
 
+// mostrar o plano alimentar
 async function getEatingPlan(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -51,6 +54,7 @@ async function getEatingPlan(value) {
     }
 }
 
+// mostrar o plano de treino
 async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -82,27 +86,9 @@ async function getExercicesByCategory(value) {
             color = "grey"
         }
     }
-    
-
-    /*  const images = json[value].images
-     console.log(images);
-     document.getElementById("images").innerHTML = `<img id="img0"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_214657508_Preview.jpeg"
-     alt="">
- <img id="img1"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_164712654_Preview.jpeg"
-     alt="">
- <img id="img2"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_195637927_Preview.jpeg"
-     alt="">`
-     if (images) {
-         for (let i = 0; i < images.length; i++) {
-             image = images[i][`strImg`]
-             document.getElementById(`img${i}`).src = `C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/${image}`
-         }
-     } */
 }
 
+// ir buscar o tema do utilizador
 key = localStorage.getItem("user")
 const userTheme = JSON.parse(localStorage.getItem("usersData"))[key].theme
 if (userTheme == "themeLightGrey") {
@@ -112,7 +98,7 @@ if (userTheme == "themeDark") {
     document.getElementById("body").classList.add("themeDark")
 }
 
-
+// alterar o tema do utilizador no localStorage
 function setLocalTheme() {
     if (document.getElementById("body").className == "themeLightGrey") {
         key = localStorage.getItem("user")
@@ -127,15 +113,18 @@ function setLocalTheme() {
     }
 }
 
+// alterar o tema visualmente
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
     document.getElementById("body").classList.toggle("themeDark")
 }
 
+// ir buscar o nome do utilizador
 const user = localStorage.getItem("user")
 const name = JSON.parse(localStorage.getItem("usersData"))[user].name
 document.getElementById("user").innerHTML = name
 
+// remover os dados do utilizador ao terminar sessão
 function deleteUserData() {
     localStorage.removeItem("user")
 }
