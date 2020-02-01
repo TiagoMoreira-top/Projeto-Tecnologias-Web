@@ -36,7 +36,7 @@ async function getEatingPlan(value) {
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1>`
-    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function () {
         document.getElementById("eatingPlan").innerHTML = ""
         document.getElementById("categoryTitle").innerHTML = ""
     })
@@ -64,7 +64,7 @@ async function getExercicesByCategory(value) {
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
-    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function () {
         document.getElementById("exercises").innerHTML = ""
         document.getElementById("categoryTitle").innerHTML = ""
     })
@@ -75,8 +75,8 @@ async function getExercicesByCategory(value) {
         const youtube = exercises[i][`strYoutube`]
         const repetitions = exercises[i][`repetitions`]
         const series = exercises[i][`series`]
-            document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
-            document.getElementById(`${id}`).classList.add("text-uppercase")
+        document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> <br> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
+        document.getElementById(`${id}`).classList.add("text-uppercase")
     }
 }
 

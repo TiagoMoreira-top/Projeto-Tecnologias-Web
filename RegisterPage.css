@@ -34,6 +34,10 @@ ul {
   width: 320px;
 }
 
+.modalAlert {
+  width: 400px;
+}
+
 body {
   background: linear-gradient(to right, #888684 , #696980);
 }
@@ -41,6 +45,10 @@ body {
 @media(max-width: 576px) {
 
 #box {
+  width: 300px;
+}
+
+.modalAlert {
   width: 300px;
 }
 
