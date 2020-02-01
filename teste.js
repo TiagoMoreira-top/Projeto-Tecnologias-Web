@@ -1,9 +1,4 @@
-key = JSON.parse(localStorage.getItem("user"))
-if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
-    document.getElementById("body").classList.remove("themeLightGrey")
-    document.getElementById("body").classList.add("themeDark")
-}
-
+// mostrar as categorias na barra de seleção
 async function getCategories() {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -13,6 +8,7 @@ async function getCategories() {
 }
 getCategories()
 
+// adicionar listeners aos botões do plano de treino e alimentar
 document.getElementById("btnTrainningPlan").addEventListener("click", function () {
     const categoryElement = document.querySelector("#sltCategory")
     const categoryValue = categoryElement.options[categoryElement.selectedIndex].value
@@ -25,19 +21,26 @@ document.getElementById("btnEatingPlan").addEventListener("click", function () {
     getEatingPlan(categoryValue)
 })
 
+// mostrar o plano alimentar
 async function getEatingPlan(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
     console.log(json);
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("eatingPlan").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = ""
+    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1>`
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+        document.getElementById("eatingPlan").innerHTML = ""
+        document.getElementById("categoryTitle").innerHTML = ""
+    })
     console.log(json[value].breakfast[0].meal);
     const breakfast = json[value].breakfast
     const lunch = json[value].lunch
     const dinner = json[value].dinner
-    document.getElementById("eatingPlan").innerHTML += `Pequeno Almoço: <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
-    document.getElementById("eatingPlan").innerHTML += `Almoço: <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
-    document.getElementById("eatingPlan").innerHTML += `Jantar: <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     for (let i = 0; i < breakfast.length; i++) {
         document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <p> ${breakfast[i].meal} ${breakfast[i].img} </p></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"><p> ${lunch[i].meal} </p></div> `
@@ -45,6 +48,7 @@ async function getEatingPlan(value) {
     }
 }
 
+// mostrar o plano de treino
 async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
@@ -53,7 +57,11 @@ async function getExercicesByCategory(value) {
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<br> <h1 class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
+    document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function() {
+        document.getElementById("exercises").innerHTML = ""
+        document.getElementById("categoryTitle").innerHTML = ""
+    })
     let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
@@ -72,27 +80,9 @@ async function getExercicesByCategory(value) {
             color = "grey"
         }
     }
-    
-
-    /*  const images = json[value].images
-     console.log(images);
-     document.getElementById("images").innerHTML = `<img id="img0"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_214657508_Preview.jpeg"
-     alt="">
- <img id="img1"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_164712654_Preview.jpeg"
-     alt="">
- <img id="img2"
-     src="C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/AdobeStock_195637927_Preview.jpeg"
-     alt="">`
-     if (images) {
-         for (let i = 0; i < images.length; i++) {
-             image = images[i][`strImg`]
-             document.getElementById(`img${i}`).src = `C:/Users/tdfmo/OneDrive/Ambiente de Trabalho/Tiago/ProjetoTW/Imagens/${image}`
-         }
-     } */
 }
 
+// ir buscar o tema do utilizador
 key = localStorage.getItem("user")
 const userTheme = JSON.parse(localStorage.getItem("usersData"))[key].theme
 if (userTheme == "themeLightGrey") {
@@ -102,7 +92,7 @@ if (userTheme == "themeDark") {
     document.getElementById("body").classList.add("themeDark")
 }
 
-
+// alterar o tema do utilizador no localStorage
 function setLocalTheme() {
     if (document.getElementById("body").className == "themeLightGrey") {
         key = localStorage.getItem("user")
@@ -117,11 +107,18 @@ function setLocalTheme() {
     }
 }
 
+// alterar o tema visualmente
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
     document.getElementById("body").classList.toggle("themeDark")
 }
 
+// ir buscar o nome do utilizador
 const user = localStorage.getItem("user")
 const name = JSON.parse(localStorage.getItem("usersData"))[user].name
 document.getElementById("user").innerHTML = name
+
+// remover os dados do utilizador ao terminar sessão
+function deleteUserData() {
+    localStorage.removeItem("user")
+}

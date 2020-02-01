@@ -10,13 +10,9 @@ body {
     background-color: #74c4df;
     color: #f1f1f1;
     width: 400px;
-    height: 320px;
+    height: 350px;
     text-align: center;
     margin: 10px;
-}
-
-.bg-blue {
-    background-color: #74c4df;
 }
 
 .align_center {
@@ -27,7 +23,7 @@ ul {
     font-family: Arial, Helvetica, sans-serif;
     list-style-type: none;
     overflow: hidden;
-    background-color: #0ad5dd;
+    background-color: #73cbd9;
 
   }
   
@@ -40,12 +36,20 @@ ul {
   }
   
   li a:hover {
-    background-color: #129ea4;
+    background-color: #256b76;
     text-decoration: none;
     color: #f1f1f1;
   }
 
   .images {
-      width: 50px;
-      height: 50px;
+      width: 250px;
+      height: 150px;
   }
+
+  .themeLightGrey {
+    background: linear-gradient(to right, #d8d5d2 , #7a7a97);
+}
+
+.themeDark {
+    background: linear-gradient(to right, #6495ED , #176b8d);
+}

@@ -29,3 +29,19 @@ ul {
   #btnSubmit {
       margin-bottom: 20px;
   }
+
+#box {
+  width: 320px;
+}
+
+body {
+    background: linear-gradient(to right, #888684 , #696980);
+}
+
+@media(max-width: 576px) {
+
+#box {
+  width: 300px;
+}
+
+}
