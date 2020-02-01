@@ -1,5 +1,6 @@
 let checkEmail
 
+// adicionar novo utilizador no localStorage
 function addUser() {
     checkEmail = 0
     users = []
@@ -45,6 +46,7 @@ console.log(checkEmail);
     }
 }
 
+// adicionar o listener ao botão de Registar utilizador
 document.getElementById("btnSubmit").addEventListener("click", function (e) {
     console.log(document.getElementById("form").checkValidity());
     if (document.getElementById("form").checkValidity() == true) {
