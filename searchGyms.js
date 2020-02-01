@@ -18,7 +18,6 @@ const request = {
 
   service = new google.maps.places.PlacesService(document.getElementById("abc"));
   service.nearbySearch(request, callback)
-  
 }
 
 function callback(results, status) {
@@ -31,16 +30,16 @@ function callback(results, status) {
          gymsDiv.innerHTML += ` <div id="card${i}" class="text-light border rounded blue"> <br> <h5> ${results[i].name} </h5> <br> <div id="img${i}"> </div> <br> <br> <p> ${results[i].vicinity} </p> <div> `
          if (results[i].photos != undefined) if (results[i].photos[0].raw_reference != undefined) if (results[i].photos[0].raw_reference.fife_url != undefined) document.getElementById(`img${i}`).innerHTML = `<img class="images" src="${results[i].photos[0].raw_reference.fife_url}">`
          // mostrar estrelas de rating
-         if (results[i].rating > 4.51) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star></i>  </p>` } else
-         if (results[i].rating > 4) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
-         if (results[i].rating > 3.51) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
-         if (results[i].rating > 3) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
-         if (results[i].rating > 2.51) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </p>` } else
-         if (results[i].rating > 2) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
-         if (results[i].rating > 1.51) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
-         if (results[i].rating > 1) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+         if (results[i].rating > 4.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star></i>  </p>` } else
+         if (results[i].rating > 4.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+         if (results[i].rating > 3.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
+         if (results[i].rating > 3.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+         if (results[i].rating > 2.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i>  </p>` } else
+         if (results[i].rating > 2.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
+         if (results[i].rating > 1.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
+         if (results[i].rating > 1.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
          if (results[i].rating > 0.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> </p>` } else
-         if (results[i].rating > 0) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star-half"></i> </p>` } else {}
+         if (results[i].rating > 0.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star-half"></i> </p>` } else {}
       }
    }
 }
