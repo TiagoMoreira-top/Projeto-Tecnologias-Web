@@ -22,13 +22,13 @@
     "exercises": [{"idExercise": 1, "strExercise": "Agachamentos", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}],
     "breakfast": [{"meal": "Crumble de granola e cacau com manga e amoras", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2019/03/Webp.net-resizeimage-3.jpg"}, {"meal": "Papa de quinoa com curcuma, coco e nozes", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2020/01/POST-6-scaled.jpg"},{"meal":""}],
     "lunch": [{"meal": "Bolinho de espinafre, brócolis e ricota", "img": "https://tofuncional.files.wordpress.com/2016/01/img_1608.jpeg"}, {"meal":"Robalo Grelhado com Cogumelos Salteados", "img": "https://www.figosefunghis.com.br/wp-content/uploads/2014/07/Robalo-Grelhado-com-cogumelos-salteados.jpg"}, {"meal":""}],
-    "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
+    "dinner": [{"meal":"Omelete à Florentina", "img": "http://www.segredosdatiaemilia.com.br/wp-content/uploads/2014/03/omelete-a-florentina-2.jpg"}, {"meal":"Legumes com gergelim salteados no shoyu", "img": "http://cozinhatravessa.com.br/wp-content/uploads/2015/04/DSC2624.jpg"},{"meal":""}]},
     {
     "idCategory": 4,
     "strCategory": "Voleibol",
     "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}],
-    "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
-    "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
+    "breakfast": [{"meal": "Pudim de chia com macaccino", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2017/05/IMG_8691.jpg"}, {"meal": "Papa de quino com laranja", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2017/08/fgkp7-e1538238694567.jpg"},{"meal":""}],
+    "lunch": [{"meal": "Beirute de ricota", "img": "http://cdn.blogdamimis.com.br/wp-content/uploads/2015/06/Beirute-de-ricota-blog-da-mimis-michelle-franzoni-post1.png"}, {"meal": "Frango Grelhado ao Molho de Laranja e Purê de Batata", "img": "https://web.archive.org/web/20200116182717im_/http://1.bp.blogspot.com/-NhtdHOXZogw/VeeflnRBZXI/AAAAAAAAy6I/3HnkyeabpIU/s640/Frango+com+Molho+de+Laranja+800x600.jpg"}, {"meal":""}],
     "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
     {
     "idCategory": 5,
