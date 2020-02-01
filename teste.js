@@ -47,7 +47,7 @@ async function getEatingPlan(value) {
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
-    for (let i = 0; i < breakfast.length; i++) {
+    for (let i = 0; i < 3; i++) {
         document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <p> ${breakfast[i].meal} </p> <br> <img class="images" src="${breakfast[i].img}"></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"> <br> <p> ${lunch[i].meal} </p> <br> <img class="images" src="${lunch[i].img}"> </div> `
         document.getElementById("dinnerOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"> <br> <p> ${dinner[i].meal} </p> <br> <img class="images" src="${dinner[i].img}"> </div> `
@@ -68,7 +68,6 @@ async function getExercicesByCategory(value) {
         document.getElementById("exercises").innerHTML = ""
         document.getElementById("categoryTitle").innerHTML = ""
     })
-    let color = "grey"
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
         const id = exercises[i][`idExercise`]
@@ -76,15 +75,8 @@ async function getExercicesByCategory(value) {
         const youtube = exercises[i][`strYoutube`]
         const repetitions = exercises[i][`repetitions`]
         const series = exercises[i][`series`]
-        if (exercise && color == "grey") {
             document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
             document.getElementById(`${id}`).classList.add("text-uppercase")
-            color = "dark"
-        } else if (exercise && color == "dark") {
-            document.getElementById("exercises").innerHTML += `<div class="text-light lightGrey rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> </p> </p> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
-            document.getElementById(`${id}`).classList.add("text-uppercase")
-            color = "grey"
-        }
     }
 }
 

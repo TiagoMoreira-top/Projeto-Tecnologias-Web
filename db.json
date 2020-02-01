@@ -14,14 +14,14 @@
     "exercises": [{"idExercise": 1, "strExercise": "Flexões", "strYoutube": "https://www.youtube.com/watch?v=IODxDxX7oi4", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "Press de Ombro", "strYoutube": "https://www.youtube.com/watch?v=5yWaNOvgFCM", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 3, "strExercise": "Agachamento", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 4, "strExercise": "Burpies", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 5, "strExercise": "Lunges", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}],
     "breakfast": [{"meal": "Panqueca de Banana com Pasta de Amendoim", "img": "https://missfit.blog.br/wp-content/uploads/2015/12/wpid-wp-1450465447870-1024x573.jpg"}, {"meal": "Tosta de Amêndoa e maçã caramelizada com canela", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2020/01/IMG_0430-768x1152.jpg"},{"meal":""}],
     "lunch": [{"meal": "Omelete com queijo e abacate", "img": "https://www.pingodoce.pt/wp-content/uploads/2019/03/omelete-com-queijo-e-abacate.jpg"}, {"meal":"Salada de tomate com mozzarella", "img": "https://www.pingodoce.pt/wp-content/uploads/2019/03/salada-de-tomate-com-mozzarella.jpg"}, {"meal":""}],
-    "dinner": [{"meal":""}, {"meal":""},{"meal":""}]
+    "dinner": [{"meal":"Cubos de frango com vegetais e ervas", "img": "https://abrilclaudia.files.wordpress.com/2016/09/cubos-de-frango-com-vegetais-ervas.jpg"}, {"meal":"Sopa de tomate com lentilhas", "img": "https://www.pingodoce.pt/wp-content/uploads/2019/01/sopa-tomate-com-lentilhas.jpg"},{"meal":""}]
     },
     {
     "idCategory": 3,
     "strCategory": "Basquetebol",
     "exercises": [{"idExercise": 1, "strExercise": "Agachamentos", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}],
-    "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
-    "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
+    "breakfast": [{"meal": "Crumble de granola e cacau com manga e amoras", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2019/03/Webp.net-resizeimage-3.jpg"}, {"meal": "Papa de quinoa com curcuma, coco e nozes", "img": "https://www.loveat.pt/wordpress/wp-content/uploads/2020/01/POST-6-scaled.jpg"},{"meal":""}],
+    "lunch": [{"meal": "Bolinho de espinafre, brócolis e ricota", "img": "https://tofuncional.files.wordpress.com/2016/01/img_1608.jpeg"}, {"meal":"Robalo Grelhado com Cogumelos Salteados", "img": "https://www.figosefunghis.com.br/wp-content/uploads/2014/07/Robalo-Grelhado-com-cogumelos-salteados.jpg"}, {"meal":""}],
     "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
     {
     "idCategory": 4,
