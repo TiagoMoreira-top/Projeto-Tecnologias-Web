@@ -36,13 +36,6 @@
      "exercises": [{"idExercise": 1, "strExercise": "Flexões Abertas", "strYoutube": "", "strExecution": "", "repetitions": "12", "series": "3"}, {"idExercise": 2, "strExercise": "Flexões fechadas", "strYoutube": "", "strExecution": "", "repetitions": "12", "series": "3"}, {"idExercise": 3, "strExercise": "Prancha abre e fecha", "strYoutube": "", "strExecution": "", "repetitions": "20", "series": "3"}, {"idExercise": 4, "strExercise": "Abdominais infra", "strYoutube": "", "strExecution": "", "repetitions": "45 segundos", "series": "3"}, {"idExercise": 5, "strExercise": "Joelho no cotovelo", "strYoutube": "", "strExecution": "", "repetitions": "18", "series": "3"}],
      "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
      "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
-     "dinner": [{"meal":""}, {"meal":""},{"meal":""}]},
-    {
-    "idCategory": 6,
-    "strCategory": "Casual",
-    "exercises": [{"idExercise": 1, "strExercise": "", "strYoutube": "", "strExecution": "", "repetitions": "", "series": ""}, {"idExercise": 2, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 3, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 4, "strExercise": "", "strYoutube": "", "strExecution": ""}, {"idExercise": 5, "strExercise": "", "strYoutube": "", "strExecution": ""}],
-    "breakfast": [{"meal": ""}, {"meal": " "},{"meal":""}],
-    "lunch": [{"meal": ""}, {"meal":""}, {"meal":""}],
-    "dinner": [{"meal":""}, {"meal":""},{"meal":""}]}
+     "dinner": [{"meal":""}, {"meal":""},{"meal":""}]}
   ]
 }
