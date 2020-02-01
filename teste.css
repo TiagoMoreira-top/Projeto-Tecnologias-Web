@@ -54,16 +54,9 @@ width: 500px;
     height: 40px;
 }
 
-
-
-#img0, #img1, #img2 {
-    width: 400px;
-    height: 350px;
-    margin-right: 25px;
-}
-
-#images {
-    display: flex;
+.images {
+    width: 200px;
+    height: 150px;
 }
 
 /*Top Bar*/ 
