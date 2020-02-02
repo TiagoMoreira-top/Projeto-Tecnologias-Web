@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="RegisterPage.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="RegisterPage.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
-    <ul class="nav justify-content-end sticky-top">
-      <li><a href="home.html">Página Inicial</a></li>
-        <li><a href="LoginPage.html">Entrar</a></li>
-      </ul> <br> 
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
+  <ul class="nav justify-content-end sticky-top">
+    <li><a href="home.html">Página Inicial</a></li>
+    <li><a href="LoginPage.html">Entrar</a></li>
+  </ul> <br>
 </head>
+
 <body>
   <div id="alertBoxSuccess" class="d-none justify-content-center">
     <div class="alert alert-success row modalAlert" role="alert">
-        <h4 class="alert-heading">Conta criada com sucesso!</h4>
-        <p>Clique em entrar para fazer o seu Login</p>
-        <hr>
-      </div>
+      <h4 class="alert-heading">Conta criada com sucesso!</h4>
+      <p>Clique em entrar para fazer o seu Login</p>
+      <hr>
     </div>
-    <div id="alertBoxDanger" class="d-none justify-content-center">
+  </div>
+  <div id="alertBoxDanger" class="d-none justify-content-center">
     <div class="alert alert-danger row modalAlert" role="alert">
-        <h4 class="alert-heading">Esse utilizador já existe!</h4>
-        <p>Por favor insira outro email</p>
-        <hr>
-      </div>
+      <h4 class="alert-heading">Esse utilizador já existe!</h4>
+      <p>Por favor insira outro email</p>
+      <hr>
     </div>
-    <div id="appTitle" class="text-center"><img src="../Projeto-Tecnologias-Web/Logo.png" alt=""></div>
-    <h3 class="text-center font-weight-bold text-light">REGISTO</h3><br>
-    <div id="container" class="d-flex justify-content-center">
-    <div id="box" class="row border rounded font-weight-bolder bg-light justify-content-center"> 
-    <form id="form"> <br>
-      <div class="form-group text-center">
-        <label for="exampleInputEmail1">Nome</label>
-        <input type="text" class="form-control" id="userName" required>
-      </div>
+  </div>
+  <div id="appTitle" class="text-center"><img src="../Projeto-Tecnologias-Web/Logo.png" alt=""></div>
+  <h3 class="text-center font-weight-bold text-light">REGISTO</h3><br>
+  <div id="container" class="d-flex justify-content-center">
+    <div id="box" class="row border rounded font-weight-bolder bg-light justify-content-center">
+      <form id="form"> <br>
+        <div class="form-group text-center">
+          <label for="exampleInputEmail1">Nome</label>
+          <input type="text" class="form-control" id="userName" required>
+        </div>
         <div class="form-group text-center">
           <label for="exampleInputEmail1">Endereço de Email</label>
           <input type="email" class="form-control" id="userEmail" aria-describedby="emailHelp" required>
@@ -48,26 +51,27 @@
           <input type="password" class="form-control" id="userPassword" required>
         </div>
         <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-          <label class="form-check-label" for="exampleCheck1" required>Quero ser Fit</label> 
+          <input type="checkbox" class="form-check-input">
+          <label class="form-check-label" for="exampleCheck1" required>Quero ser Fit</label>
         </div> <br>
-        <p>Já tem conta?   <a href="LoginPage.html" class="text-warning">Entrar</a></p>
+        <p>Já tem conta? <a href="LoginPage.html" class="text-warning">Entrar</a></p>
         <div class="d-flex justify-content-center">
-        <button id="btnSubmit" type="submit" class="btn btn-warning font-weight-bold">Registar</button>
-    </div>
+          <button id="btnSubmit" type="submit" class="btn btn-warning font-weight-bold">Registar</button>
+        </div>
       </form>
     </div>
-</div> <br> <br>
+  </div> <br> <br>
 
-    <script src="RegisterPage.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+  <script src="RegisterPage.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -1,4 +1,9 @@
-apiKey = "AIzaSyAA1nMi1QDSZ1w7pJ6InpthhFgM9zVeaCI"
+// apiKey atual
+const apiKey = "AIzaSyARbpqWA_HZW5QMiGkcBU3OjOvlZSdUWXo"
+
+// se a key em cima não estiver a funcionar experimentar com esta em baixo
+const resourseApiKey = "AIzaSyD_CVzchDykTAE9HtHwr7mPmBf4UcQ3hK4"
+
 let userLat
 let userLon
 let service
@@ -21,7 +26,6 @@ const request = {
 }
 
 function callback(results, status) {
-   console.log("entrou");
    if (status == google.maps.places.PlacesServiceStatus.OK) {
       console.log(results);
       let gymsDiv = document.getElementById("gyms")

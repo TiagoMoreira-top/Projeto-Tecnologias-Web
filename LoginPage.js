@@ -1,4 +1,4 @@
-let key
+let key // posição do utilizador no array de utilizadores
 
 // verificar se existe utilizador e enviar para a página principal
 function confirmUser() {
@@ -7,8 +7,6 @@ function confirmUser() {
     const userPassword = document.getElementById("userPassword").value
     if (JSON.parse(localStorage.getItem("usersData"))) {
         for (let i = 0; i < JSON.parse(localStorage.getItem("usersData")).length; i++) {
-            console.log(JSON.parse(localStorage.getItem("usersData"))[i].email);
-            console.log(userEmail);
             if (userEmail == JSON.parse(localStorage.getItem("usersData"))[i].email) {
                 if (userPassword == JSON.parse(localStorage.getItem("usersData"))[i].password) {
                     document.getElementById("alertBoxDanger").classList.add("d-none")

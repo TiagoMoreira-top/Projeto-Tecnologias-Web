@@ -32,7 +32,6 @@ document.getElementById("btnEatingPlan").addEventListener("click", function () {
 async function getEatingPlan(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
-    console.log(json);
     document.getElementById("exercises").innerHTML = ""
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("categoryTitle").innerHTML = ""
@@ -41,7 +40,6 @@ async function getEatingPlan(value) {
         document.getElementById("eatingPlan").innerHTML = ""
         document.getElementById("categoryTitle").innerHTML = ""
     })
-    console.log(json[value].breakfast[0].meal);
     const breakfast = json[value].breakfast
     const lunch = json[value].lunch
     const dinner = json[value].dinner
@@ -59,7 +57,6 @@ async function getEatingPlan(value) {
 async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
-    console.log(json[value].exercises);
     const exercises = json[value].exercises
     document.getElementById("eatingPlan").innerHTML = ""
     document.getElementById("exercises").innerHTML = ""

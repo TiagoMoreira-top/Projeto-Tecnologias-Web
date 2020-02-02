@@ -1,3 +1,18 @@
+.btnIMC {
+    width: 100px;
+    margin-right: 10px;
+}
+
+#divBtn {
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+#boxUserIMC {
+    width: 500px;
+}
+
 #boxIMC {
     width: 500px;
 }
@@ -5,6 +20,10 @@
 @media (max-width: 576px) {
 
 #boxIMC {
+width: 300px;
+}
+
+#boxUserIMC {
 width: 300px;
 }
 
