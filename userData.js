@@ -65,5 +65,6 @@ function deleteUserData() {
 
 document.getElementById("showUserIMC").addEventListener("click", function() {
     document.getElementById("boxUserIMC").classList.toggle("d-none")
-  document.getElementById("userIMC").innerHTML = `O seu IMC é ${JSON.parse(localStorage.getItem("usersData"))[key].imc}`
+ if (JSON.parse(localStorage.getItem("usersData"))[key].imc) { document.getElementById("userIMC").innerHTML = `O seu IMC é ${JSON.parse(localStorage.getItem("usersData"))[key].imc}`}
+else { document.getElementById("userIMC").innerHTML = "Ainda não calculou o seu IMC" }
 })
