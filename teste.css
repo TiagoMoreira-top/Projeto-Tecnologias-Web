@@ -4,14 +4,6 @@ body {
     position: relative;
 }
 
-.themeLightGrey {
-    background: linear-gradient(to right, #e4e3e3, #b4b4be);
-}
-
-.themeDark {
-    background: linear-gradient(to right, #6495ED , #176b8d);
-}
-
 #alter {
     width: 110px;
     height: 90px;

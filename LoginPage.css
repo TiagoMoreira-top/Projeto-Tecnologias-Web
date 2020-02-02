@@ -39,7 +39,7 @@ ul {
 }
 
 body {
-  background: linear-gradient(to right, #e4e3e3, #b4b4be);
+  background: linear-gradient(to right, #e4e3e3, #38383a);
 }
 
 @media(max-width: 576px) {
