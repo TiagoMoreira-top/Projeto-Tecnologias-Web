@@ -1,7 +1,7 @@
 key = JSON.parse(localStorage.getItem("user"))
-if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
+if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeBlue") {
     document.getElementById("body").classList.remove("themeLightGrey")
-    document.getElementById("body").classList.add("themeDark")
+    document.getElementById("body").classList.add("themeBlue")
 }
 
 function setLocalTheme() {
@@ -10,10 +10,10 @@ function setLocalTheme() {
         let newData = JSON.parse(localStorage.getItem("usersData"))
         newData[key].theme = "themeLightGrey"
         localStorage.setItem("usersData", JSON.stringify(newData))
-    } else if (document.getElementById("body").className == "themeDark") {
+    } else if (document.getElementById("body").className == "themeBlue") {
         key = localStorage.getItem("user")
         let newData = JSON.parse(localStorage.getItem("usersData"))
-        newData[key].theme = "themeDark"
+        newData[key].theme = "themeBlue"
         localStorage.setItem("usersData", JSON.stringify(newData))
     }
 }
@@ -21,7 +21,7 @@ function setLocalTheme() {
 // alterar o tema visualmente
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
-    document.getElementById("body").classList.toggle("themeDark")
+    document.getElementById("body").classList.toggle("themeBlue")
 }
 
 // adicionar o listener ao butão de calcular o IMC

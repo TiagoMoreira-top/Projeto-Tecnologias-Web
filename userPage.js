@@ -1,7 +1,8 @@
+// Ir buscar o tema do utilizador
 key = JSON.parse(localStorage.getItem("user"))
-if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeDark") {
+if (JSON.parse(localStorage.getItem("usersData"))[key].theme == "themeBlue") {
     document.getElementById("body").classList.remove("themeLightGrey")
-    document.getElementById("body").classList.add("themeDark")
+    document.getElementById("body").classList.add("themeBlue")
 }
 
 // mostrar as categorias na barra de seleção
@@ -86,8 +87,8 @@ const userTheme = JSON.parse(localStorage.getItem("usersData"))[key].theme
 if (userTheme == "themeLightGrey") {
     document.getElementById("body").classList.add("themeLightGrey")
 }
-if (userTheme == "themeDark") {
-    document.getElementById("body").classList.add("themeDark")
+if (userTheme == "themeBlue") {
+    document.getElementById("body").classList.add("themeBlue")
 }
 
 // alterar o tema do utilizador no localStorage
@@ -97,10 +98,10 @@ function setLocalTheme() {
         let newData = JSON.parse(localStorage.getItem("usersData"))
         newData[key].theme = "themeLightGrey"
         localStorage.setItem("usersData", JSON.stringify(newData))
-    } else if (document.getElementById("body").className == "themeDark") {
+    } else if (document.getElementById("body").className == "themeBlue") {
         key = localStorage.getItem("user")
         let newData = JSON.parse(localStorage.getItem("usersData"))
-        newData[key].theme = "themeDark"
+        newData[key].theme = "themeBlue"
         localStorage.setItem("usersData", JSON.stringify(newData))
     }
 }
@@ -108,7 +109,7 @@ function setLocalTheme() {
 // alterar o tema visualmente
 function changeTheme() {
     document.getElementById("body").classList.toggle("themeLightGrey")
-    document.getElementById("body").classList.toggle("themeDark")
+    document.getElementById("body").classList.toggle("themeBlue")
 }
 
 // ir buscar o nome do utilizador

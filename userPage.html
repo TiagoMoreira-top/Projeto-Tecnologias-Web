@@ -8,7 +8,7 @@
     <title>QUERO SER FIT</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="teste.css">
+    <link rel="stylesheet" href="userPage.css">
     <link rel="stylesheet" href="common.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed&display=swap" rel="stylesheet">
@@ -19,22 +19,11 @@
         <li><a id="user" href="userData.html">Sobre Nós</a></li>
         <li><a onclick="changeTheme(), setLocalTheme()" href="#about">Alterar tema</a></li>
         <li><a onclick="deleteUserData()" href="LoginPage.html">Terminar Sessão</a></li>
-      </ul> <br> <br>
+      </ul> <br>
 </head>
 
 <body id="body" class="">
-    <div id="alertBoxGetIMC" class="d-none row justify-content-center">
-        <div class="alert alert-info row col-4 justify-content-center" role="alert">
-            <h4 class="alert-heading">Cálculo do Indíce de Massa Corporal</h4> 
-            <h6>Altura(cm)</h6>
-            <input id="userHeight" class="form-control" type="number">
-            <h6>Peso(Kg)</h6>
-            <input id="userWeight" class="form-control" type="number"> <br> <br>
-            <button id="btnGetIMC" class="form-control col-4">Calcular</button>
-            <button id="btnCloseAlertBox" class="form-control col-4">Fechar</button> <br>
-            <h6 id="showIMC"></h6>
-          </div>
-        </div>
+    <div class="text-center"><img src="../Projeto-Tecnologias-Web/Logo.png" alt=""></div> <br>
     <div id="container" class="d-flex justify-content-center">
         <div id="box" class="">
             <h1 id="boxTitlePhone" for="sltCategory" class="tipos font-weight-bold">Treino </h1>
@@ -53,7 +42,7 @@
         <div id="eatingPlan" class="text-center">
         </div> 
    
-    <script src="teste.js"></script>
+    <script src="userPage.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>

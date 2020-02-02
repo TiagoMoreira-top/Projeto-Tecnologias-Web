@@ -15,7 +15,7 @@ function confirmUser() {
                     document.getElementById("alertBoxDanger").classList.remove("d-flex")
                     key = i
                     localStorage.setItem("user", i)
-                    window.location.href = "teste.html";
+                    window.location.href = "userPage.html";
                 } else {
                     document.getElementById("alertBoxDanger").classList.remove("d-none")
                     document.getElementById("alertBoxDanger").classList.add("d-flex")
