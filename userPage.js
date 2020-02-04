@@ -28,24 +28,29 @@ document.getElementById("btnEatingPlan").addEventListener("click", function () {
     getEatingPlan(categoryValue)
 })
 
+// Definir variáveis
+let divExercises = document.getElementById("exercises")
+let divEatingPlan = document.getElementById("eatingPlan")
+let divCategoryTitle = document.getElementById("categoryTitle")
+
 // mostrar o plano alimentar
 async function getEatingPlan(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
-    document.getElementById("exercises").innerHTML = ""
-    document.getElementById("eatingPlan").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1>`
+    divExercises.innerHTML = ""
+    divEatingPlan.innerHTML = ""
+    divCategoryTitle.innerHTML = ""
+    divCategoryTitle.innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1>`
     document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function () {
-        document.getElementById("eatingPlan").innerHTML = ""
-        document.getElementById("categoryTitle").innerHTML = ""
+        divEatingPlan.innerHTML = ""
+        divCategoryTitle.innerHTML = ""
     })
     const breakfast = json[value].breakfast
     const lunch = json[value].lunch
     const dinner = json[value].dinner
-    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
-    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
-    document.getElementById("eatingPlan").innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    divEatingPlan.innerHTML += ` <br> <h5 class="font-weight-bold"> Pequeno Almoço: </h5> <br> <div class="d-flex justify-content-center flex-wrap text-center" id="breakfastOptions"> </div>`
+    divEatingPlan.innerHTML += ` <br> <h5 class="font-weight-bold"> Almoço: </h5> <br> <div id="lunchOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
+    divEatingPlan.innerHTML += ` <br> <h5 class="font-weight-bold"> Jantar: </h5> <br> <div id="dinnerOptions" class="d-flex justify-content-center flex-wrap text-center"> </div>`
     for (let i = 0; i < 2; i++) {
         document.getElementById("breakfastOptions").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <p> ${breakfast[i].meal} </p> <br> <img class="images" src="${breakfast[i].img}"></div>`
         document.getElementById("lunchOptions").innerHTML += ` <div class="text-light blue rounded-left rounded-right border"> <br> <p> ${lunch[i].meal} </p> <br> <img class="images" src="${lunch[i].img}"> </div> `
@@ -58,13 +63,13 @@ async function getExercicesByCategory(value) {
     const data = await fetch(`http://my-json-server.typicode.com/TiagoMoreira-top/Projeto-Tecnologias-Web/categories`)
     const json = await data.json()
     const exercises = json[value].exercises
-    document.getElementById("eatingPlan").innerHTML = ""
-    document.getElementById("exercises").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = ""
-    document.getElementById("categoryTitle").innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
+    divEatingPlan.innerHTML = ""
+    divExercises.innerHTML = ""
+    divCategoryTitle.innerHTML = ""
+    divCategoryTitle.innerHTML = `<br> <h1 id="dinamicCategoryTitle" class="font-weight-bold row justify-content-center"> ${json[value].strCategory} </h1> <br>`
     document.getElementById(`dinamicCategoryTitle`).addEventListener("click", function () {
-        document.getElementById("exercises").innerHTML = ""
-        document.getElementById("categoryTitle").innerHTML = ""
+        divExercises.innerHTML = ""
+        divCategoryTitle.innerHTML = ""
     })
     for (let i = 0; i < exercises.length; i++) {
         const exercise = exercises[i][`strExercise`]
@@ -73,7 +78,7 @@ async function getExercicesByCategory(value) {
         const youtube = exercises[i][`strYoutube`]
         const repetitions = exercises[i][`repetitions`]
         const series = exercises[i][`series`]
-        document.getElementById("exercises").innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> <br> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
+        divExercises.innerHTML += `<div class="text-light blue rounded-left rounded-right border"> <br> <div id="${id}"> <p> <span> EXERCÍCIO </span>: <span class="font-weight-bold"> ${exercise} </span> </div> <p> Descrição: ${execution} </p> <p> Nº de repetições: ${repetitions} <p> Nº de Séries: ${series} </p> <br> <a class="bg-danger red text-light rounded" href="${youtube}"> YouTube Tutorial </a> </div> <br>`
         document.getElementById(`${id}`).classList.add("text-uppercase")
     }
 }

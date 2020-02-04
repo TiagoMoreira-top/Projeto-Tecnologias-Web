@@ -31,7 +31,7 @@ function callback(results, status) {
       let gymsDiv = document.getElementById("gyms")
       gymsDiv.innerHTML = ""
       for (let i = 0; i < results.length; i++) {
-         gymsDiv.innerHTML += ` <div id="card${i}" class="text-light border rounded blue"> <br> <h5> ${results[i].name} </h5> <br> <div id="img${i}"> </div> <br> <br> <p> ${results[i].vicinity} </p> <div> `
+         gymsDiv.innerHTML += ` <div id="card${i}" class="text-light border rounded blue"> <br> <h5> ${results[i].name} </h5> <br> <div id="img${i}"> </div> <br> <br> <p> ${results[i].vicinity} </p> <br> <div> `
          if (results[i].photos != undefined) if (results[i].photos[0].raw_reference != undefined) if (results[i].photos[0].raw_reference.fife_url != undefined) document.getElementById(`img${i}`).innerHTML = `<img class="images" src="${results[i].photos[0].raw_reference.fife_url}">`
          // mostrar estrelas de rating
          if (results[i].rating > 4.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"</i>  </p>` } else
@@ -43,7 +43,8 @@ function callback(results, status) {
          if (results[i].rating > 1.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star"></i> </p>` } else
          if (results[i].rating > 1.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> <i class="fa fa-star-half"></i> </p>` } else
          if (results[i].rating > 0.5) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star"></i> </p>` } else
-         if (results[i].rating > 0.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star-half"></i> </p>` } else {}
+         if (results[i].rating > 0.24) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Rating:  <i class="fa fa-star-half"></i> </p>` } else 
+         if (results[i].rating == undefined) { document.getElementById(`card${i}`).innerHTML += `<p id="rating${i}"> Não tem Rating </p>` } else {}
       }
    }
 }

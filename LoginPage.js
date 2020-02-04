@@ -31,7 +31,7 @@ function confirmUser() {
 
 // adicionar o listener ao botão de Entrar
 document.getElementById("btnSubmit").addEventListener("click", function (e) {
-    if (document.getElementById("btnSubmit").checkValidity() == true) {
+    if (document.getElementById("form").checkValidity() == true) {
         e.preventDefault()
         confirmUser()
     }
